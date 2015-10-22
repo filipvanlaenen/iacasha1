@@ -99,5 +99,6 @@ Results better than the linear reduction are marked in bold.
 |       1      | 24,475           | 24,508         | F032             |
 |       2      | 24,427           | 24,491         | F031-F032        |
 |       3      | 24,379           | 24,458         | T029-F031-F032   |
+|       4      | 24,331           | 24,450         | F027-T029-F031-F032, T027-T029-F031-F032 |
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
