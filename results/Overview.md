@@ -36,6 +36,8 @@ Results better than the exponential reduction are marked in bold.
 |       3      | 4.17×10⁻³             | 1.40×10⁻²      | T029-F031-F032   |
 |       4      | 6.71×10⁻⁴             | 9.54×10⁻³      | F029-F030-F031-F032 |
 
+![Total Complexity](Total_Complexity.png "Total Complexity")
+
 ## Number of Operations
 
 ## Number of Assignments
