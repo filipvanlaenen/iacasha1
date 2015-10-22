@@ -72,3 +72,32 @@ Results better than the linear reduction are marked in bold.
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
 
 ## Number of Assignments
+
+The number of assignments is measured as the number of local variables used in
+the calculation. When all input bits have been fixed, the number of assginments
+will have been reduced to zero.
+
+A reduction of the number of assignments may give an indication that the project
+is approaching a collision, and if the number of assignments is reduced to zero
+without all input bits being fixed, a collision has indeed been found. However,
+it can be expected that if this project will find a collision, the collision
+will be found long before the number of assignments has been reduced to zero.
+Also, a large reduction in the number of assignments doesn't guarantee that a
+collision will be found: as long as every input bit remains present at least
+once in the calculation of an output bit, a collision has not been found.
+
+The performance of the project can be benchmarked against a linear reduction of
+the number of assignments, starting from the number of assignments for the
+situation where no input bit has been fixed, to a value of 0 for 511 input bits
+fixed.
+
+Results better than the linear reduction are marked in bold.
+
+| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
+|:------------:|:----------------:|:--------------:| ---------------- |
+|       0      | 24,523           | 24,523         | N/A              |
+|       1      | 24,475           | 24,508         | F032             |
+|       2      | 24,427           | 24,491         | F031-F032        |
+|       3      | 24,379           | 24,458         | T029-F031-F032   |
+
+![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
