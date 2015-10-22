@@ -67,7 +67,7 @@ Results better than the linear reduction are marked in bold.
 |       1      | 61,354           | 61,448         | [F032](001/f032.md) |
 |       2      | 61,233           | 61,424         | [F031-F032](002/f031_f032.md) |
 |       3      | 61,113           | 61,385         | [T029-F031-F032](003/t029_f031_f032.md) |
-|       4      | 60,993           | 61,367         | [T028-T029-F031-F032](004/t028_t029_f031_f032.md) |
+|       4      | 60,993           | 61,363         | [T029-F030-F031-F032](004/t029_f030_f031_f032.md) |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
 
