@@ -6,8 +6,11 @@ chunk of 512 bits of the message algebraically for every bit that's fixed in the
 input vector. A collision is found if this results in one of the input bits
 being eliminated completely from the calculation.
 
-License
--------
+## Results
+
+For an overview of the results so far, see [this](results/Overview.md) page.
+
+## License
 
 Iterative Algebraic Collision Attack on SHA-1 (IACASHA1)  
 Copyright (C) 2015 Filip van Laenen <f.a.vanlaenen@ieee.org>
