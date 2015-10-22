@@ -9,10 +9,10 @@ assignments.
 
 The complexity of the function is measured as the total number of times each
 input bit appears in the calculation of an output bit. When all input bits
-have been fixed, the total complexity will be reduced to zero.
+have been fixed, the total complexity will have been reduced to zero.
 
 A reduction of the total complexity may give an indication that the project
-if approaching a collision, and if the complexity is reduced to zero without
+is approaching a collision, and if the complexity is reduced to zero without
 all input bits being fixed, a collision has indeed been found. However, it can
 be expected that if this project will find a collision, the collision will be
 found long before the total complexity has been reduced to zero. Also, a large
@@ -39,5 +39,34 @@ Results better than the exponential reduction are marked in bold.
 ![Total Complexity](Total_Complexity.png "Total Complexity")
 
 ## Number of Operations
+
+The number of operations is measured as the number of times the boolean
+operators and (“&”), or (“|”) and xor (“^”) appear in the calculation. When all
+input bits have been fixed, the number of operators will have been reduced to
+zero.
+
+A reduction of the number of operations may give an indication that the project
+is approaching a collision, and if the number of operations is reduced to zero
+without all input bits being fixed, a collision has indeed been found. However,
+it can be expected that if this project will find a collision, the collision
+will be found long before the number of operations has been reduced to zero.
+Also, a large reduction in the number of operations doesn't guarantee that a
+collision will be found: as long as every input bit remains present at least
+once in the calculation of an output bit, a collision has not been found.
+
+The performance of the project can be benchmarked against a linear reduction of
+the number of operations, starting from the number of operations for the
+situation where no input bit has been fixed, to a value of 0 for 511 input bits
+fixed.
+
+Results better than the linear reduction are marked in bold.
+
+| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
+|:------------:|:----------------:|:--------------:| ---------------- |
+|       0      | 61,474           | 61,474         | N/A              |
+|       1      | 61,354           | 61,448         | F032             |
+|       2      | 61,233           | 61,424         | F031-F032        |
+|       3      | 61,113           | 61,385         | T029-F031-F032   |
+|       4      | 60,993           | 61,370         | F029-F030-F031-F032 |
 
 ## Number of Assignments
