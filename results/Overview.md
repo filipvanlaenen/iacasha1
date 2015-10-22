@@ -69,4 +69,6 @@ Results better than the linear reduction are marked in bold.
 |       3      | 61,113           | 61,385         | T029-F031-F032   |
 |       4      | 60,993           | 61,370         | F029-F030-F031-F032 |
 
+![Number of Operations](Number_of_Operations.png "Number of Operations")
+
 ## Number of Assignments
