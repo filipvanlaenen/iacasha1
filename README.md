@@ -9,7 +9,7 @@ being eliminated completely from the calculation.
 License
 -------
 
-Iterative Algebraic Collision Attack on SHA-1 (IACASHA1)
+Iterative Algebraic Collision Attack on SHA-1 (IACASHA1)  
 Copyright (C) 2015 Filip van Laenen <f.a.vanlaenen@ieee.org>
 
 This program is free software; you can redistribute it and/or modify it under
