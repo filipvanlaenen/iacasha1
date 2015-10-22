@@ -99,6 +99,6 @@ Results better than the linear reduction are marked in bold.
 |       1      | 24,475           | 24,508         | [F032](001/f032.md) |
 |       2      | 24,427           | 24,491         | [F031-F032](002/f031_f032.md) |
 |       3      | 24,379           | 24,458         | [T029-F031-F032](003/t029_f031_f032.md) |
-|       4      | 24,331           | 24,450         | F027-T029-F031-F032, T027-T029-F031-F032 |
+|       4      | 24,331           | 24,450         | [F027-T029-F031-F032](004/f027_t029_f031_f032.md), [T027-T029-F031-F032](004/t027_t029_f031_f032.md) |
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
