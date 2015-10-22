@@ -1,4 +1,4 @@
-# Results for results/000/sha1_bitwise_compress0.md
+# Results for Initial Situation
 
 ## Summary
 
