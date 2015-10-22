@@ -33,7 +33,7 @@ Results better than the exponential reduction are marked in bold.
 |       0      | 1.00×10⁰              | 1.00×10⁰       | [Initial Situation](000/000.md) |
 |       1      | 1.61×10⁻¹             | 3.64×10⁻¹      | [F032](001/f032.md) |
 |       2      | 2.59×10⁻²             | **1.87×10⁻²**  | [F031-F032](002/f031_f032.md) |
-|       3      | 4.17×10⁻³             | 1.40×10⁻²      | T029-F031-F032   |
+|       3      | 4.17×10⁻³             | 1.40×10⁻²      | [T029-F031-F032](003/t029_f031_f032.md) |
 |       4      | 6.71×10⁻⁴             | 9.54×10⁻³      | F029-F030-F031-F032 |
 
 ![Total Complexity](Total_Complexity.png "Total Complexity")
@@ -65,8 +65,8 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 61,474           | 61,474         | [Initial Situation](000/000.md) |
 |       1      | 61,354           | 61,448         | [F032](001/f032.md) |
-|       2      | 61,233           | 61,424         | F031-F032        |
-|       3      | 61,113           | 61,385         | T029-F031-F032   |
+|       2      | 61,233           | 61,424         | [F031-F032](002/f031_f032.md) |
+|       3      | 61,113           | 61,385         | [T029-F031-F032](003/t029_f031_f032.md) |
 |       4      | 60,993           | 61,370         | F029-F030-F031-F032 |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
@@ -97,8 +97,8 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 24,523           | 24,523         | [Initial Situation](000/000.md) |
 |       1      | 24,475           | 24,508         | [F032](001/f032.md) |
-|       2      | 24,427           | 24,491         | F031-F032        |
-|       3      | 24,379           | 24,458         | T029-F031-F032   |
+|       2      | 24,427           | 24,491         | [F031-F032](002/f031_f032.md) |
+|       3      | 24,379           | 24,458         | [T029-F031-F032](003/t029_f031_f032.md) |
 |       4      | 24,331           | 24,450         | F027-T029-F031-F032, T027-T029-F031-F032 |
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
