@@ -61,7 +61,7 @@ class SHA1BitwiseCompress0_F001 < SHA1WithoutCompress0
     lv_01_m04 = iv_005 ^ lv_01_l04
     lv_01_m03 = iv_004 ^ lv_01_l03
     lv_01_m02 = iv_003 ^ lv_01_l02
-    lv_01_m01 = !iv_002 ^ lv_01_l01    
+    lv_01_m01 = !iv_002 ^ lv_01_l01
     lv_01_n29 = iv_032 & !iv_031
     lv_01_n28 = lv_01_n29 & lv_01_m29
     lv_01_n27 = lv_01_m28 | lv_01_n28
