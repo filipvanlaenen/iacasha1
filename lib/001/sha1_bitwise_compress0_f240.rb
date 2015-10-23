@@ -1901,7 +1901,7 @@ class SHA1BitwiseCompress0_F240 < SHA1WithoutCompress0
     lv_08_l17 = (lv_08_k18 & iv_243) | (lv_08_l18 & (lv_08_k18 | iv_243))
     lv_08_l16 = (lv_08_k17 & iv_242) | (lv_08_l17 & (lv_08_k17 | iv_242))
     lv_08_l15 = (lv_08_k16 & iv_241) | (lv_08_l16 & (lv_08_k16 | iv_241))
-    lv_08_l14 = (lv_08_k15 & false) | (lv_08_l15 & (lv_08_k15 | false))
+    lv_08_l14 = lv_08_l15 & lv_08_k15
     lv_08_l13 = (lv_08_k14 & iv_239) | (lv_08_l14 & (lv_08_k14 | iv_239))
     lv_08_l12 = (lv_08_k13 & iv_238) | (lv_08_l13 & (lv_08_k13 | iv_238))
     lv_08_l11 = (lv_08_k12 & iv_237) | (lv_08_l12 & (lv_08_k12 | iv_237))
@@ -1932,7 +1932,7 @@ class SHA1BitwiseCompress0_F240 < SHA1WithoutCompress0
     lv_08_m18 = lv_08_k18 ^ iv_243 ^ lv_08_l18
     lv_08_m17 = lv_08_k17 ^ iv_242 ^ lv_08_l17
     lv_08_m16 = lv_08_k16 ^ iv_241 ^ lv_08_l16
-    lv_08_m15 = lv_08_k15 ^ false ^ lv_08_l15
+    lv_08_m15 = lv_08_k15 ^ lv_08_l15
     lv_08_m14 = lv_08_k14 ^ iv_239 ^ lv_08_l14
     lv_08_m13 = lv_08_k13 ^ iv_238 ^ lv_08_l13
     lv_08_m12 = lv_08_k12 ^ iv_237 ^ lv_08_l12
@@ -5863,7 +5863,7 @@ class SHA1BitwiseCompress0_F240 < SHA1WithoutCompress0
     www_22_11 = www_19_12 ^ iv_429 ^ iv_237 ^ iv_173
     www_22_12 = www_19_13 ^ iv_430 ^ iv_238 ^ iv_174
     www_22_13 = www_19_14 ^ iv_431 ^ iv_239 ^ iv_175
-    www_22_14 = www_19_15 ^ iv_432 ^ false ^ iv_176
+    www_22_14 = www_19_15 ^ iv_432 ^ iv_176
     www_22_15 = www_19_16 ^ iv_433 ^ iv_241 ^ iv_177
     www_22_16 = www_19_17 ^ iv_434 ^ iv_242 ^ iv_178
     www_22_17 = www_19_18 ^ iv_435 ^ iv_243 ^ iv_179
@@ -6493,7 +6493,7 @@ class SHA1BitwiseCompress0_F240 < SHA1WithoutCompress0
     www_24_11 = www_21_12 ^ iv_493 ^ iv_301 ^ iv_237
     www_24_12 = www_21_13 ^ iv_494 ^ iv_302 ^ iv_238
     www_24_13 = www_21_14 ^ iv_495 ^ iv_303 ^ iv_239
-    www_24_14 = www_21_15 ^ iv_496 ^ iv_304 ^ false
+    www_24_14 = www_21_15 ^ iv_496 ^ iv_304
     www_24_15 = www_21_16 ^ iv_497 ^ iv_305 ^ iv_241
     www_24_16 = www_21_17 ^ iv_498 ^ iv_306 ^ iv_242
     www_24_17 = www_21_18 ^ iv_499 ^ iv_307 ^ iv_243

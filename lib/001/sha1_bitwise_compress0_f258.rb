@@ -2198,7 +2198,7 @@ class SHA1BitwiseCompress0_F258 < SHA1WithoutCompress0
     lv_09_l03 = (lv_09_k04 & iv_261) | (lv_09_l04 & (lv_09_k04 | iv_261))
     lv_09_l02 = (lv_09_k03 & iv_260) | (lv_09_l03 & (lv_09_k03 | iv_260))
     lv_09_l01 = (lv_09_k02 & iv_259) | (lv_09_l02 & (lv_09_k02 | iv_259))
-    lv_09_l00 = (lv_09_k01 & false) | (lv_09_l01 & (lv_09_k01 | false))
+    lv_09_l00 = lv_09_l01 & lv_09_k01
     lv_09_m31 = lv_09_k31 ^ iv_288
     lv_09_m30 = lv_09_k30 ^ iv_287 ^ lv_09_l30
     lv_09_m29 = lv_09_k29 ^ iv_286 ^ lv_09_l29
@@ -2229,7 +2229,7 @@ class SHA1BitwiseCompress0_F258 < SHA1WithoutCompress0
     lv_09_m04 = lv_09_k04 ^ iv_261 ^ lv_09_l04
     lv_09_m03 = lv_09_k03 ^ iv_260 ^ lv_09_l03
     lv_09_m02 = lv_09_k02 ^ iv_259 ^ lv_09_l02
-    lv_09_m01 = lv_09_k01 ^ false ^ lv_09_l01
+    lv_09_m01 = lv_09_k01 ^ lv_09_l01
     lv_09_m00 = lv_09_k00 ^ iv_257 ^ lv_09_l00
     lv_09_n29 = lv_09_m31 & lv_09_m30
     lv_09_n28 = lv_09_n29 & lv_09_m29
@@ -4274,7 +4274,7 @@ class SHA1BitwiseCompress0_F258 < SHA1WithoutCompress0
     aaa_16_29 = lv_16_m29 ^ lv_16_n29
     aaa_16_30 = lv_16_m30 ^ lv_16_m31
     # Round 17 #################################################################
-    www_17_00 = iv_418 ^ false ^ iv_066 ^ iv_002
+    www_17_00 = iv_418 ^ iv_066 ^ iv_002
     www_17_01 = iv_419 ^ iv_259 ^ iv_067 ^ iv_003
     www_17_02 = iv_420 ^ iv_260 ^ iv_068 ^ iv_004
     www_17_03 = iv_421 ^ iv_261 ^ iv_069 ^ iv_005
@@ -6164,7 +6164,7 @@ class SHA1BitwiseCompress0_F258 < SHA1WithoutCompress0
     aaa_22_29 = lv_22_m29 ^ lv_22_n29
     aaa_22_30 = lv_22_m30 ^ lv_22_m31
     # Round 23 #################################################################
-    www_23_00 = www_20_01 ^ iv_450 ^ false ^ iv_194
+    www_23_00 = www_20_01 ^ iv_450 ^ iv_194
     www_23_01 = www_20_02 ^ iv_451 ^ iv_259 ^ iv_195
     www_23_02 = www_20_03 ^ iv_452 ^ iv_260 ^ iv_196
     www_23_03 = www_20_04 ^ iv_453 ^ iv_261 ^ iv_197
@@ -6794,7 +6794,7 @@ class SHA1BitwiseCompress0_F258 < SHA1WithoutCompress0
     aaa_24_29 = lv_24_m29 ^ lv_24_n29
     aaa_24_30 = lv_24_m30 ^ lv_24_m31
     # Round 25 #################################################################
-    www_25_00 = www_22_01 ^ www_17_01 ^ iv_322 ^ false
+    www_25_00 = www_22_01 ^ www_17_01 ^ iv_322
     www_25_01 = www_22_02 ^ www_17_02 ^ iv_323 ^ iv_259
     www_25_02 = www_22_03 ^ www_17_03 ^ iv_324 ^ iv_260
     www_25_03 = www_22_04 ^ www_17_04 ^ iv_325 ^ iv_261
