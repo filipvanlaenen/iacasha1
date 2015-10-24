@@ -3330,7 +3330,7 @@ class SHA1BitwiseCompress0_F386 < SHA1WithoutCompress0
     lv_13_l03 = (lv_13_k04 & iv_389) | (lv_13_l04 & (lv_13_k04 | iv_389))
     lv_13_l02 = (lv_13_k03 & iv_388) | (lv_13_l03 & (lv_13_k03 | iv_388))
     lv_13_l01 = (lv_13_k02 & iv_387) | (lv_13_l02 & (lv_13_k02 | iv_387))
-    lv_13_l00 = (lv_13_k01 & false) | (lv_13_l01 & (lv_13_k01 | false))
+    lv_13_l00 = lv_13_l01 & lv_13_k01
     lv_13_m31 = lv_13_k31 ^ iv_416
     lv_13_m30 = lv_13_k30 ^ iv_415 ^ lv_13_l30
     lv_13_m29 = lv_13_k29 ^ iv_414 ^ lv_13_l29
@@ -3361,7 +3361,7 @@ class SHA1BitwiseCompress0_F386 < SHA1WithoutCompress0
     lv_13_m04 = lv_13_k04 ^ iv_389 ^ lv_13_l04
     lv_13_m03 = lv_13_k03 ^ iv_388 ^ lv_13_l03
     lv_13_m02 = lv_13_k02 ^ iv_387 ^ lv_13_l02
-    lv_13_m01 = lv_13_k01 ^ false ^ lv_13_l01
+    lv_13_m01 = lv_13_k01 ^ lv_13_l01
     lv_13_m00 = lv_13_k00 ^ iv_385 ^ lv_13_l00
     lv_13_n29 = lv_13_m31 & lv_13_m30
     lv_13_n28 = lv_13_n29 & lv_13_m29
@@ -5534,7 +5534,7 @@ class SHA1BitwiseCompress0_F386 < SHA1WithoutCompress0
     aaa_20_29 = lv_20_m29 ^ lv_20_n29
     aaa_20_30 = lv_20_m30 ^ lv_20_m31
     # Round 21 #################################################################
-    www_21_00 = www_18_01 ^ false ^ iv_194 ^ iv_130
+    www_21_00 = www_18_01 ^ iv_194 ^ iv_130
     www_21_01 = www_18_02 ^ iv_387 ^ iv_195 ^ iv_131
     www_21_02 = www_18_03 ^ iv_388 ^ iv_196 ^ iv_132
     www_21_03 = www_18_04 ^ iv_389 ^ iv_197 ^ iv_133
@@ -7424,7 +7424,7 @@ class SHA1BitwiseCompress0_F386 < SHA1WithoutCompress0
     aaa_26_29 = lv_26_m29 ^ lv_26_n29
     aaa_26_30 = lv_26_m30 ^ lv_26_m31
     # Round 27 #################################################################
-    www_27_00 = www_24_01 ^ www_19_01 ^ false ^ iv_322
+    www_27_00 = www_24_01 ^ www_19_01 ^ iv_322
     www_27_01 = www_24_02 ^ www_19_02 ^ iv_387 ^ iv_323
     www_27_02 = www_24_03 ^ www_19_03 ^ iv_388 ^ iv_324
     www_27_03 = www_24_04 ^ www_19_04 ^ iv_389 ^ iv_325
@@ -8054,7 +8054,7 @@ class SHA1BitwiseCompress0_F386 < SHA1WithoutCompress0
     aaa_28_29 = lv_28_m29 ^ lv_28_n29
     aaa_28_30 = lv_28_m30 ^ lv_28_m31
     # Round 29 #################################################################
-    www_29_00 = www_26_01 ^ www_21_01 ^ iv_450 ^ false
+    www_29_00 = www_26_01 ^ www_21_01 ^ iv_450
     www_29_01 = www_26_02 ^ www_21_02 ^ iv_451 ^ iv_387
     www_29_02 = www_26_03 ^ www_21_03 ^ iv_452 ^ iv_388
     www_29_03 = www_26_04 ^ www_21_04 ^ iv_453 ^ iv_389

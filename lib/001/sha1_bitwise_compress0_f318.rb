@@ -2453,7 +2453,7 @@ class SHA1BitwiseCompress0_F318 < SHA1WithoutCompress0
     lv_10_k00 = lv_10_i00 ^ aaa_05_30 ^ lv_10_j00
     lv_10_l30 = lv_10_k31 & iv_320
     lv_10_l29 = (lv_10_k30 & iv_319) | (lv_10_l30 & (lv_10_k30 | iv_319))
-    lv_10_l28 = (lv_10_k29 & false) | (lv_10_l29 & (lv_10_k29 | false))
+    lv_10_l28 = lv_10_l29 & lv_10_k29
     lv_10_l27 = (lv_10_k28 & iv_317) | (lv_10_l28 & (lv_10_k28 | iv_317))
     lv_10_l26 = (lv_10_k27 & iv_316) | (lv_10_l27 & (lv_10_k27 | iv_316))
     lv_10_l25 = (lv_10_k26 & iv_315) | (lv_10_l26 & (lv_10_k26 | iv_315))
@@ -2484,7 +2484,7 @@ class SHA1BitwiseCompress0_F318 < SHA1WithoutCompress0
     lv_10_l00 = (lv_10_k01 & iv_290) | (lv_10_l01 & (lv_10_k01 | iv_290))
     lv_10_m31 = lv_10_k31 ^ iv_320
     lv_10_m30 = lv_10_k30 ^ iv_319 ^ lv_10_l30
-    lv_10_m29 = lv_10_k29 ^ false ^ lv_10_l29
+    lv_10_m29 = lv_10_k29 ^ lv_10_l29
     lv_10_m28 = lv_10_k28 ^ iv_317 ^ lv_10_l28
     lv_10_m27 = lv_10_k27 ^ iv_316 ^ lv_10_l27
     lv_10_m26 = lv_10_k26 ^ iv_315 ^ lv_10_l26
@@ -4617,7 +4617,7 @@ class SHA1BitwiseCompress0_F318 < SHA1WithoutCompress0
     www_18_25 = iv_475 ^ iv_315 ^ iv_123 ^ iv_059
     www_18_26 = iv_476 ^ iv_316 ^ iv_124 ^ iv_060
     www_18_27 = iv_477 ^ iv_317 ^ iv_125 ^ iv_061
-    www_18_28 = iv_478 ^ false ^ iv_126 ^ iv_062
+    www_18_28 = iv_478 ^ iv_126 ^ iv_062
     www_18_29 = iv_479 ^ iv_319 ^ iv_127 ^ iv_063
     www_18_30 = iv_480 ^ iv_320 ^ iv_128 ^ iv_064
     www_18_31 = iv_449 ^ iv_289 ^ iv_097 ^ iv_033
@@ -6507,7 +6507,7 @@ class SHA1BitwiseCompress0_F318 < SHA1WithoutCompress0
     www_24_25 = www_21_26 ^ iv_507 ^ iv_315 ^ iv_251
     www_24_26 = www_21_27 ^ iv_508 ^ iv_316 ^ iv_252
     www_24_27 = www_21_28 ^ iv_509 ^ iv_317 ^ iv_253
-    www_24_28 = www_21_29 ^ iv_510 ^ false ^ iv_254
+    www_24_28 = www_21_29 ^ iv_510 ^ iv_254
     www_24_29 = www_21_30 ^ iv_511 ^ iv_319 ^ iv_255
     www_24_30 = www_21_31 ^ iv_512 ^ iv_320 ^ iv_256
     www_24_31 = www_21_00 ^ iv_481 ^ iv_289 ^ iv_225
@@ -7137,7 +7137,7 @@ class SHA1BitwiseCompress0_F318 < SHA1WithoutCompress0
     www_26_25 = www_23_26 ^ www_18_26 ^ iv_379 ^ iv_315
     www_26_26 = www_23_27 ^ www_18_27 ^ iv_380 ^ iv_316
     www_26_27 = www_23_28 ^ www_18_28 ^ iv_381 ^ iv_317
-    www_26_28 = www_23_29 ^ www_18_29 ^ iv_382 ^ false
+    www_26_28 = www_23_29 ^ www_18_29 ^ iv_382
     www_26_29 = www_23_30 ^ www_18_30 ^ iv_383 ^ iv_319
     www_26_30 = www_23_31 ^ www_18_31 ^ iv_384 ^ iv_320
     www_26_31 = www_23_00 ^ www_18_00 ^ iv_353 ^ iv_289

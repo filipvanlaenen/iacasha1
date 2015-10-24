@@ -3645,7 +3645,7 @@ class SHA1BitwiseCompress0_F417 < SHA1WithoutCompress0
     lv_14_m03 = lv_14_k03 ^ iv_420 ^ lv_14_l03
     lv_14_m02 = lv_14_k02 ^ iv_419 ^ lv_14_l02
     lv_14_m01 = lv_14_k01 ^ iv_418 ^ lv_14_l01
-    lv_14_m00 = lv_14_k00 ^ false ^ lv_14_l00
+    lv_14_m00 = lv_14_k00 ^ lv_14_l00
     lv_14_n29 = lv_14_m31 & lv_14_m30
     lv_14_n28 = lv_14_n29 & lv_14_m29
     lv_14_n27 = lv_14_m28 | lv_14_n28
@@ -4305,7 +4305,7 @@ class SHA1BitwiseCompress0_F417 < SHA1WithoutCompress0
     www_17_28 = iv_446 ^ iv_286 ^ iv_094 ^ iv_030
     www_17_29 = iv_447 ^ iv_287 ^ iv_095 ^ iv_031
     www_17_30 = iv_448 ^ iv_288 ^ iv_096 ^ iv_032
-    www_17_31 = false ^ iv_257 ^ iv_065 ^ iv_001
+    www_17_31 = iv_257 ^ iv_065 ^ iv_001
     lv_17_g00 = (aaa_15_00 & aaa_14_30) | (!aaa_15_00 & aaa_13_30)
     lv_17_g01 = (aaa_15_01 & !lv_14_m31) | (!aaa_15_01 & !lv_13_m31)
     lv_17_g02 = (aaa_15_02 & aaa_14_00) | (!aaa_15_02 & aaa_13_00)
@@ -5880,7 +5880,7 @@ class SHA1BitwiseCompress0_F417 < SHA1WithoutCompress0
     www_22_28 = www_19_29 ^ iv_446 ^ iv_254 ^ iv_190
     www_22_29 = www_19_30 ^ iv_447 ^ iv_255 ^ iv_191
     www_22_30 = www_19_31 ^ iv_448 ^ iv_256 ^ iv_192
-    www_22_31 = www_19_00 ^ false ^ iv_225 ^ iv_161
+    www_22_31 = www_19_00 ^ iv_225 ^ iv_161
     lv_22_g00 = aaa_20_00 ^ aaa_19_30 ^ aaa_18_30
     lv_22_g01 = aaa_20_01 ^ !lv_19_m31 ^ !lv_18_m31
     lv_22_g02 = aaa_20_02 ^ aaa_19_00 ^ aaa_18_00
@@ -7770,7 +7770,7 @@ class SHA1BitwiseCompress0_F417 < SHA1WithoutCompress0
     www_28_28 = www_25_29 ^ www_20_29 ^ iv_446 ^ iv_382
     www_28_29 = www_25_30 ^ www_20_30 ^ iv_447 ^ iv_383
     www_28_30 = www_25_31 ^ www_20_31 ^ iv_448 ^ iv_384
-    www_28_31 = www_25_00 ^ www_20_00 ^ false ^ iv_353
+    www_28_31 = www_25_00 ^ www_20_00 ^ iv_353
     lv_28_g00 = aaa_26_00 ^ aaa_25_30 ^ aaa_24_30
     lv_28_g01 = aaa_26_01 ^ !lv_25_m31 ^ !lv_24_m31
     lv_28_g02 = aaa_26_02 ^ aaa_25_00 ^ aaa_24_00
@@ -8400,7 +8400,7 @@ class SHA1BitwiseCompress0_F417 < SHA1WithoutCompress0
     www_30_28 = www_27_29 ^ www_22_29 ^ iv_510 ^ iv_446
     www_30_29 = www_27_30 ^ www_22_30 ^ iv_511 ^ iv_447
     www_30_30 = www_27_31 ^ www_22_31 ^ iv_512 ^ iv_448
-    www_30_31 = www_27_00 ^ www_22_00 ^ iv_481 ^ false
+    www_30_31 = www_27_00 ^ www_22_00 ^ iv_481
     lv_30_g00 = aaa_28_00 ^ aaa_27_30 ^ aaa_26_30
     lv_30_g01 = aaa_28_01 ^ !lv_27_m31 ^ !lv_26_m31
     lv_30_g02 = aaa_28_02 ^ aaa_27_00 ^ aaa_26_00
