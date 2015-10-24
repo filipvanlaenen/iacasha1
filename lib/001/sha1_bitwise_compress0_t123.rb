@@ -772,7 +772,7 @@ class SHA1BitwiseCompress0_T123 < SHA1WithoutCompress0
     lv_04_l28 = (lv_04_k29 & iv_126) | (lv_04_l29 & (lv_04_k29 | iv_126))
     lv_04_l27 = (lv_04_k28 & iv_125) | (lv_04_l28 & (lv_04_k28 | iv_125))
     lv_04_l26 = (lv_04_k27 & iv_124) | (lv_04_l27 & (lv_04_k27 | iv_124))
-    lv_04_l25 = (lv_04_k26 & true) | (lv_04_l26 & (lv_04_k26 | true))
+    lv_04_l25 = lv_04_k26 | lv_04_l26
     lv_04_l24 = (lv_04_k25 & iv_122) | (lv_04_l25 & (lv_04_k25 | iv_122))
     lv_04_l23 = (lv_04_k24 & iv_121) | (lv_04_l24 & (lv_04_k24 | iv_121))
     lv_04_l22 = (lv_04_k23 & iv_120) | (lv_04_l23 & (lv_04_k23 | iv_120))
@@ -803,7 +803,7 @@ class SHA1BitwiseCompress0_T123 < SHA1WithoutCompress0
     lv_04_m29 = lv_04_k29 ^ iv_126 ^ lv_04_l29
     lv_04_m28 = lv_04_k28 ^ iv_125 ^ lv_04_l28
     lv_04_m27 = lv_04_k27 ^ iv_124 ^ lv_04_l27
-    lv_04_m26 = lv_04_k26 ^ true ^ lv_04_l26
+    lv_04_m26 = lv_04_k26 ^ !lv_04_l26
     lv_04_m25 = lv_04_k25 ^ iv_122 ^ lv_04_l25
     lv_04_m24 = lv_04_k24 ^ iv_121 ^ lv_04_l24
     lv_04_m23 = lv_04_k23 ^ iv_120 ^ lv_04_l23
@@ -4614,7 +4614,7 @@ class SHA1BitwiseCompress0_T123 < SHA1WithoutCompress0
     www_18_22 = iv_472 ^ iv_312 ^ iv_120 ^ iv_056
     www_18_23 = iv_473 ^ iv_313 ^ iv_121 ^ iv_057
     www_18_24 = iv_474 ^ iv_314 ^ iv_122 ^ iv_058
-    www_18_25 = iv_475 ^ iv_315 ^ true ^ iv_059
+    www_18_25 = iv_475 ^ iv_315 ^ !iv_059
     www_18_26 = iv_476 ^ iv_316 ^ iv_124 ^ iv_060
     www_18_27 = iv_477 ^ iv_317 ^ iv_125 ^ iv_061
     www_18_28 = iv_478 ^ iv_318 ^ iv_126 ^ iv_062
@@ -5244,7 +5244,7 @@ class SHA1BitwiseCompress0_T123 < SHA1WithoutCompress0
     www_20_22 = www_17_23 ^ iv_376 ^ iv_184 ^ iv_120
     www_20_23 = www_17_24 ^ iv_377 ^ iv_185 ^ iv_121
     www_20_24 = www_17_25 ^ iv_378 ^ iv_186 ^ iv_122
-    www_20_25 = www_17_26 ^ iv_379 ^ iv_187 ^ true
+    www_20_25 = www_17_26 ^ iv_379 ^ !iv_187
     www_20_26 = www_17_27 ^ iv_380 ^ iv_188 ^ iv_124
     www_20_27 = www_17_28 ^ iv_381 ^ iv_189 ^ iv_125
     www_20_28 = www_17_29 ^ iv_382 ^ iv_190 ^ iv_126

@@ -305,7 +305,7 @@ class SHA1BitwiseCompress0_T033 < SHA1WithoutCompress0
     lv_02_m03 = lv_02_k03 ^ iv_036 ^ lv_02_l03
     lv_02_m02 = lv_02_k02 ^ iv_035 ^ lv_02_l02
     lv_02_m01 = lv_02_k01 ^ iv_034 ^ lv_02_l01
-    lv_02_m00 = lv_02_k00 ^ true ^ lv_02_l00
+    lv_02_m00 = lv_02_k00 ^ !lv_02_l00
     lv_02_n29 = lv_02_m31 & lv_02_m30
     lv_02_n28 = lv_02_n29 & lv_02_m29
     lv_02_n27 = lv_02_m28 | lv_02_n28
@@ -4620,7 +4620,7 @@ class SHA1BitwiseCompress0_T033 < SHA1WithoutCompress0
     www_18_28 = iv_478 ^ iv_318 ^ iv_126 ^ iv_062
     www_18_29 = iv_479 ^ iv_319 ^ iv_127 ^ iv_063
     www_18_30 = iv_480 ^ iv_320 ^ iv_128 ^ iv_064
-    www_18_31 = iv_449 ^ iv_289 ^ iv_097 ^ true
+    www_18_31 = iv_449 ^ iv_289 ^ !iv_097
     lv_18_g00 = (aaa_16_00 & aaa_15_30) | (!aaa_16_00 & aaa_14_30)
     lv_18_g01 = (aaa_16_01 & !lv_15_m31) | (!aaa_16_01 & !lv_14_m31)
     lv_18_g02 = (aaa_16_02 & aaa_15_00) | (!aaa_16_02 & aaa_14_00)

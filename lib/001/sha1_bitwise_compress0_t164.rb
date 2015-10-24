@@ -1347,7 +1347,7 @@ class SHA1BitwiseCompress0_T164 < SHA1WithoutCompress0
     lv_06_l05 = (lv_06_k06 & iv_167) | (lv_06_l06 & (lv_06_k06 | iv_167))
     lv_06_l04 = (lv_06_k05 & iv_166) | (lv_06_l05 & (lv_06_k05 | iv_166))
     lv_06_l03 = (lv_06_k04 & iv_165) | (lv_06_l04 & (lv_06_k04 | iv_165))
-    lv_06_l02 = (lv_06_k03 & true) | (lv_06_l03 & (lv_06_k03 | true))
+    lv_06_l02 = lv_06_k03 | lv_06_l03
     lv_06_l01 = (lv_06_k02 & iv_163) | (lv_06_l02 & (lv_06_k02 | iv_163))
     lv_06_l00 = (lv_06_k01 & iv_162) | (lv_06_l01 & (lv_06_k01 | iv_162))
     lv_06_m31 = lv_06_k31 ^ iv_192
@@ -1378,7 +1378,7 @@ class SHA1BitwiseCompress0_T164 < SHA1WithoutCompress0
     lv_06_m06 = lv_06_k06 ^ iv_167 ^ lv_06_l06
     lv_06_m05 = lv_06_k05 ^ iv_166 ^ lv_06_l05
     lv_06_m04 = lv_06_k04 ^ iv_165 ^ lv_06_l04
-    lv_06_m03 = lv_06_k03 ^ true ^ lv_06_l03
+    lv_06_m03 = lv_06_k03 ^ !lv_06_l03
     lv_06_m02 = lv_06_k02 ^ iv_163 ^ lv_06_l02
     lv_06_m01 = lv_06_k01 ^ iv_162 ^ lv_06_l01
     lv_06_m00 = lv_06_k00 ^ iv_161 ^ lv_06_l00
@@ -5221,7 +5221,7 @@ class SHA1BitwiseCompress0_T164 < SHA1WithoutCompress0
     # Round 20 #################################################################
     www_20_00 = www_17_01 ^ iv_354 ^ iv_162 ^ iv_098
     www_20_01 = www_17_02 ^ iv_355 ^ iv_163 ^ iv_099
-    www_20_02 = www_17_03 ^ iv_356 ^ true ^ iv_100
+    www_20_02 = www_17_03 ^ iv_356 ^ !iv_100
     www_20_03 = www_17_04 ^ iv_357 ^ iv_165 ^ iv_101
     www_20_04 = www_17_05 ^ iv_358 ^ iv_166 ^ iv_102
     www_20_05 = www_17_06 ^ iv_359 ^ iv_167 ^ iv_103
@@ -5851,7 +5851,7 @@ class SHA1BitwiseCompress0_T164 < SHA1WithoutCompress0
     # Round 22 #################################################################
     www_22_00 = www_19_01 ^ iv_418 ^ iv_226 ^ iv_162
     www_22_01 = www_19_02 ^ iv_419 ^ iv_227 ^ iv_163
-    www_22_02 = www_19_03 ^ iv_420 ^ iv_228 ^ true
+    www_22_02 = www_19_03 ^ iv_420 ^ !iv_228
     www_22_03 = www_19_04 ^ iv_421 ^ iv_229 ^ iv_165
     www_22_04 = www_19_05 ^ iv_422 ^ iv_230 ^ iv_166
     www_22_05 = www_19_06 ^ iv_423 ^ iv_231 ^ iv_167

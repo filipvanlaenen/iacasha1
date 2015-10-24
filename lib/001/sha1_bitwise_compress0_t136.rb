@@ -1060,7 +1060,7 @@ class SHA1BitwiseCompress0_T136 < SHA1WithoutCompress0
     lv_05_l09 = (lv_05_k10 & iv_139) | (lv_05_l10 & (lv_05_k10 | iv_139))
     lv_05_l08 = (lv_05_k09 & iv_138) | (lv_05_l09 & (lv_05_k09 | iv_138))
     lv_05_l07 = (lv_05_k08 & iv_137) | (lv_05_l08 & (lv_05_k08 | iv_137))
-    lv_05_l06 = (lv_05_k07 & true) | (lv_05_l07 & (lv_05_k07 | true))
+    lv_05_l06 = lv_05_k07 | lv_05_l07
     lv_05_l05 = (lv_05_k06 & iv_135) | (lv_05_l06 & (lv_05_k06 | iv_135))
     lv_05_l04 = (lv_05_k05 & iv_134) | (lv_05_l05 & (lv_05_k05 | iv_134))
     lv_05_l03 = (lv_05_k04 & iv_133) | (lv_05_l04 & (lv_05_k04 | iv_133))
@@ -1091,7 +1091,7 @@ class SHA1BitwiseCompress0_T136 < SHA1WithoutCompress0
     lv_05_m10 = lv_05_k10 ^ iv_139 ^ lv_05_l10
     lv_05_m09 = lv_05_k09 ^ iv_138 ^ lv_05_l09
     lv_05_m08 = lv_05_k08 ^ iv_137 ^ lv_05_l08
-    lv_05_m07 = lv_05_k07 ^ true ^ lv_05_l07
+    lv_05_m07 = lv_05_k07 ^ !lv_05_l07
     lv_05_m06 = lv_05_k06 ^ iv_135 ^ lv_05_l06
     lv_05_m05 = lv_05_k05 ^ iv_134 ^ lv_05_l05
     lv_05_m04 = lv_05_k04 ^ iv_133 ^ lv_05_l04
@@ -4910,7 +4910,7 @@ class SHA1BitwiseCompress0_T136 < SHA1WithoutCompress0
     www_19_03 = iv_485 ^ iv_325 ^ iv_133 ^ iv_069
     www_19_04 = iv_486 ^ iv_326 ^ iv_134 ^ iv_070
     www_19_05 = iv_487 ^ iv_327 ^ iv_135 ^ iv_071
-    www_19_06 = iv_488 ^ iv_328 ^ true ^ iv_072
+    www_19_06 = iv_488 ^ iv_328 ^ !iv_072
     www_19_07 = iv_489 ^ iv_329 ^ iv_137 ^ iv_073
     www_19_08 = iv_490 ^ iv_330 ^ iv_138 ^ iv_074
     www_19_09 = iv_491 ^ iv_331 ^ iv_139 ^ iv_075
@@ -5540,7 +5540,7 @@ class SHA1BitwiseCompress0_T136 < SHA1WithoutCompress0
     www_21_03 = www_18_04 ^ iv_389 ^ iv_197 ^ iv_133
     www_21_04 = www_18_05 ^ iv_390 ^ iv_198 ^ iv_134
     www_21_05 = www_18_06 ^ iv_391 ^ iv_199 ^ iv_135
-    www_21_06 = www_18_07 ^ iv_392 ^ iv_200 ^ true
+    www_21_06 = www_18_07 ^ iv_392 ^ !iv_200
     www_21_07 = www_18_08 ^ iv_393 ^ iv_201 ^ iv_137
     www_21_08 = www_18_09 ^ iv_394 ^ iv_202 ^ iv_138
     www_21_09 = www_18_10 ^ iv_395 ^ iv_203 ^ iv_139

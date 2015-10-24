@@ -1098,7 +1098,7 @@ class SHA1BitwiseCompress0_T129 < SHA1WithoutCompress0
     lv_05_m03 = lv_05_k03 ^ iv_132 ^ lv_05_l03
     lv_05_m02 = lv_05_k02 ^ iv_131 ^ lv_05_l02
     lv_05_m01 = lv_05_k01 ^ iv_130 ^ lv_05_l01
-    lv_05_m00 = lv_05_k00 ^ true ^ lv_05_l00
+    lv_05_m00 = lv_05_k00 ^ !lv_05_l00
     lv_05_n29 = lv_05_m31 & lv_05_m30
     lv_05_n28 = lv_05_n29 & lv_05_m29
     lv_05_n27 = lv_05_m28 | lv_05_n28
@@ -4935,7 +4935,7 @@ class SHA1BitwiseCompress0_T129 < SHA1WithoutCompress0
     www_19_28 = iv_510 ^ iv_350 ^ iv_158 ^ iv_094
     www_19_29 = iv_511 ^ iv_351 ^ iv_159 ^ iv_095
     www_19_30 = iv_512 ^ iv_352 ^ iv_160 ^ iv_096
-    www_19_31 = iv_481 ^ iv_321 ^ true ^ iv_065
+    www_19_31 = iv_481 ^ iv_321 ^ !iv_065
     lv_19_g00 = (aaa_17_00 & aaa_16_30) | (!aaa_17_00 & aaa_15_30)
     lv_19_g01 = (aaa_17_01 & !lv_16_m31) | (!aaa_17_01 & !lv_15_m31)
     lv_19_g02 = (aaa_17_02 & aaa_16_00) | (!aaa_17_02 & aaa_15_00)
@@ -5565,7 +5565,7 @@ class SHA1BitwiseCompress0_T129 < SHA1WithoutCompress0
     www_21_28 = www_18_29 ^ iv_414 ^ iv_222 ^ iv_158
     www_21_29 = www_18_30 ^ iv_415 ^ iv_223 ^ iv_159
     www_21_30 = www_18_31 ^ iv_416 ^ iv_224 ^ iv_160
-    www_21_31 = www_18_00 ^ iv_385 ^ iv_193 ^ true
+    www_21_31 = www_18_00 ^ iv_385 ^ !iv_193
     lv_21_g00 = aaa_19_00 ^ aaa_18_30 ^ aaa_17_30
     lv_21_g01 = aaa_19_01 ^ !lv_18_m31 ^ !lv_17_m31
     lv_21_g02 = aaa_19_02 ^ aaa_18_00 ^ aaa_17_00

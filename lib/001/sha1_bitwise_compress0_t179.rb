@@ -1332,7 +1332,7 @@ class SHA1BitwiseCompress0_T179 < SHA1WithoutCompress0
     lv_06_l20 = (lv_06_k21 & iv_182) | (lv_06_l21 & (lv_06_k21 | iv_182))
     lv_06_l19 = (lv_06_k20 & iv_181) | (lv_06_l20 & (lv_06_k20 | iv_181))
     lv_06_l18 = (lv_06_k19 & iv_180) | (lv_06_l19 & (lv_06_k19 | iv_180))
-    lv_06_l17 = (lv_06_k18 & true) | (lv_06_l18 & (lv_06_k18 | true))
+    lv_06_l17 = lv_06_k18 | lv_06_l18
     lv_06_l16 = (lv_06_k17 & iv_178) | (lv_06_l17 & (lv_06_k17 | iv_178))
     lv_06_l15 = (lv_06_k16 & iv_177) | (lv_06_l16 & (lv_06_k16 | iv_177))
     lv_06_l14 = (lv_06_k15 & iv_176) | (lv_06_l15 & (lv_06_k15 | iv_176))
@@ -1363,7 +1363,7 @@ class SHA1BitwiseCompress0_T179 < SHA1WithoutCompress0
     lv_06_m21 = lv_06_k21 ^ iv_182 ^ lv_06_l21
     lv_06_m20 = lv_06_k20 ^ iv_181 ^ lv_06_l20
     lv_06_m19 = lv_06_k19 ^ iv_180 ^ lv_06_l19
-    lv_06_m18 = lv_06_k18 ^ true ^ lv_06_l18
+    lv_06_m18 = lv_06_k18 ^ !lv_06_l18
     lv_06_m17 = lv_06_k17 ^ iv_178 ^ lv_06_l17
     lv_06_m16 = lv_06_k16 ^ iv_177 ^ lv_06_l16
     lv_06_m15 = lv_06_k15 ^ iv_176 ^ lv_06_l15
@@ -5236,7 +5236,7 @@ class SHA1BitwiseCompress0_T179 < SHA1WithoutCompress0
     www_20_14 = www_17_15 ^ iv_368 ^ iv_176 ^ iv_112
     www_20_15 = www_17_16 ^ iv_369 ^ iv_177 ^ iv_113
     www_20_16 = www_17_17 ^ iv_370 ^ iv_178 ^ iv_114
-    www_20_17 = www_17_18 ^ iv_371 ^ true ^ iv_115
+    www_20_17 = www_17_18 ^ iv_371 ^ !iv_115
     www_20_18 = www_17_19 ^ iv_372 ^ iv_180 ^ iv_116
     www_20_19 = www_17_20 ^ iv_373 ^ iv_181 ^ iv_117
     www_20_20 = www_17_21 ^ iv_374 ^ iv_182 ^ iv_118
@@ -5866,7 +5866,7 @@ class SHA1BitwiseCompress0_T179 < SHA1WithoutCompress0
     www_22_14 = www_19_15 ^ iv_432 ^ iv_240 ^ iv_176
     www_22_15 = www_19_16 ^ iv_433 ^ iv_241 ^ iv_177
     www_22_16 = www_19_17 ^ iv_434 ^ iv_242 ^ iv_178
-    www_22_17 = www_19_18 ^ iv_435 ^ iv_243 ^ true
+    www_22_17 = www_19_18 ^ iv_435 ^ !iv_243
     www_22_18 = www_19_19 ^ iv_436 ^ iv_244 ^ iv_180
     www_22_19 = www_19_20 ^ iv_437 ^ iv_245 ^ iv_181
     www_22_20 = www_19_21 ^ iv_438 ^ iv_246 ^ iv_182

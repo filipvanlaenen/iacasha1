@@ -516,7 +516,7 @@ class SHA1BitwiseCompress0_T068 < SHA1WithoutCompress0
     lv_03_l05 = (lv_03_k06 & iv_071) | (lv_03_l06 & (lv_03_k06 | iv_071))
     lv_03_l04 = (lv_03_k05 & iv_070) | (lv_03_l05 & (lv_03_k05 | iv_070))
     lv_03_l03 = (lv_03_k04 & iv_069) | (lv_03_l04 & (lv_03_k04 | iv_069))
-    lv_03_l02 = (lv_03_k03 & true) | (lv_03_l03 & (lv_03_k03 | true))
+    lv_03_l02 = lv_03_k03 | lv_03_l03
     lv_03_l01 = (lv_03_k02 & iv_067) | (lv_03_l02 & (lv_03_k02 | iv_067))
     lv_03_l00 = (lv_03_k01 & iv_066) | (lv_03_l01 & (lv_03_k01 | iv_066))
     lv_03_m31 = aaa_02_04 ^ iv_096
@@ -547,7 +547,7 @@ class SHA1BitwiseCompress0_T068 < SHA1WithoutCompress0
     lv_03_m06 = lv_03_k06 ^ iv_071 ^ lv_03_l06
     lv_03_m05 = lv_03_k05 ^ iv_070 ^ lv_03_l05
     lv_03_m04 = lv_03_k04 ^ iv_069 ^ lv_03_l04
-    lv_03_m03 = lv_03_k03 ^ true ^ lv_03_l03
+    lv_03_m03 = lv_03_k03 ^ !lv_03_l03
     lv_03_m02 = lv_03_k02 ^ iv_067 ^ lv_03_l02
     lv_03_m01 = lv_03_k01 ^ iv_066 ^ lv_03_l01
     lv_03_m00 = lv_03_k00 ^ iv_065 ^ lv_03_l00
@@ -4276,7 +4276,7 @@ class SHA1BitwiseCompress0_T068 < SHA1WithoutCompress0
     # Round 17 #################################################################
     www_17_00 = iv_418 ^ iv_258 ^ iv_066 ^ iv_002
     www_17_01 = iv_419 ^ iv_259 ^ iv_067 ^ iv_003
-    www_17_02 = iv_420 ^ iv_260 ^ true ^ iv_004
+    www_17_02 = iv_420 ^ iv_260 ^ !iv_004
     www_17_03 = iv_421 ^ iv_261 ^ iv_069 ^ iv_005
     www_17_04 = iv_422 ^ iv_262 ^ iv_070 ^ iv_006
     www_17_05 = iv_423 ^ iv_263 ^ iv_071 ^ iv_007
@@ -4906,7 +4906,7 @@ class SHA1BitwiseCompress0_T068 < SHA1WithoutCompress0
     # Round 19 #################################################################
     www_19_00 = iv_482 ^ iv_322 ^ iv_130 ^ iv_066
     www_19_01 = iv_483 ^ iv_323 ^ iv_131 ^ iv_067
-    www_19_02 = iv_484 ^ iv_324 ^ iv_132 ^ true
+    www_19_02 = iv_484 ^ iv_324 ^ !iv_132
     www_19_03 = iv_485 ^ iv_325 ^ iv_133 ^ iv_069
     www_19_04 = iv_486 ^ iv_326 ^ iv_134 ^ iv_070
     www_19_05 = iv_487 ^ iv_327 ^ iv_135 ^ iv_071

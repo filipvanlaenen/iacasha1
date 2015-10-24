@@ -32,7 +32,6 @@ class SHA1BitwiseCompress0_T002 < SHA1WithoutCompress0
     lv_01_l03 = lv_01_l04 & iv_005
     lv_01_l02 = lv_01_l03 & iv_004
     lv_01_l01 = lv_01_l02 & iv_003
-    lv_01_l00 = true | lv_01_l01
     lv_01_m29 = iv_030 ^ iv_031
     lv_01_m28 = !iv_029 ^ lv_01_l28
     lv_01_m27 = !iv_028 ^ lv_01_l27
@@ -61,8 +60,6 @@ class SHA1BitwiseCompress0_T002 < SHA1WithoutCompress0
     lv_01_m04 = iv_005 ^ lv_01_l04
     lv_01_m03 = iv_004 ^ lv_01_l03
     lv_01_m02 = iv_003 ^ lv_01_l02
-    lv_01_m01 = !true ^ lv_01_l01
-    lv_01_m00 = iv_001 ^ lv_01_l00
     lv_01_n29 = iv_032 & !iv_031
     lv_01_n28 = lv_01_n29 & lv_01_m29
     lv_01_n27 = lv_01_m28 | lv_01_n28
@@ -92,9 +89,9 @@ class SHA1BitwiseCompress0_T002 < SHA1WithoutCompress0
     lv_01_n03 = lv_01_m04 | lv_01_n04
     lv_01_n02 = lv_01_m03 | lv_01_n03
     lv_01_n01 = lv_01_n02 & lv_01_m02
-    lv_01_n00 = lv_01_m01 | lv_01_n01
-    aaa_01_00 = lv_01_m00 ^ lv_01_n00
-    aaa_01_01 = lv_01_m01 ^ !lv_01_n01
+    lv_01_n00 = lv_01_l01 | lv_01_n01
+    aaa_01_00 = !iv_001 ^ lv_01_n00
+    aaa_01_01 = lv_01_l01 ^ !lv_01_n01
     aaa_01_02 = lv_01_m02 ^ lv_01_n02
     aaa_01_03 = lv_01_m03 ^ !lv_01_n03
     aaa_01_04 = lv_01_m04 ^ !lv_01_n04
@@ -4274,7 +4271,7 @@ class SHA1BitwiseCompress0_T002 < SHA1WithoutCompress0
     aaa_16_29 = lv_16_m29 ^ lv_16_n29
     aaa_16_30 = lv_16_m30 ^ lv_16_m31
     # Round 17 #################################################################
-    www_17_00 = iv_418 ^ iv_258 ^ iv_066 ^ true
+    www_17_00 = iv_418 ^ iv_258 ^ !iv_066
     www_17_01 = iv_419 ^ iv_259 ^ iv_067 ^ iv_003
     www_17_02 = iv_420 ^ iv_260 ^ iv_068 ^ iv_004
     www_17_03 = iv_421 ^ iv_261 ^ iv_069 ^ iv_005

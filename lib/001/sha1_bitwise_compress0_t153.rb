@@ -1043,7 +1043,7 @@ class SHA1BitwiseCompress0_T153 < SHA1WithoutCompress0
     lv_05_l26 = (lv_05_i27 & iv_156) | (lv_05_l27 & (lv_05_i27 | iv_156))
     lv_05_l25 = (lv_05_i26 & iv_155) | (lv_05_l26 & (lv_05_i26 | iv_155))
     lv_05_l24 = (!lv_05_i25 & iv_154) | (lv_05_l25 & (!lv_05_i25 | iv_154))
-    lv_05_l23 = (lv_05_k24 & true) | (lv_05_l24 & (lv_05_k24 | true))
+    lv_05_l23 = lv_05_k24 | lv_05_l24
     lv_05_l22 = (lv_05_k23 & iv_152) | (lv_05_l23 & (lv_05_k23 | iv_152))
     lv_05_l21 = (lv_05_k22 & iv_151) | (lv_05_l22 & (lv_05_k22 | iv_151))
     lv_05_l20 = (lv_05_k21 & iv_150) | (lv_05_l21 & (lv_05_k21 | iv_150))
@@ -1074,7 +1074,7 @@ class SHA1BitwiseCompress0_T153 < SHA1WithoutCompress0
     lv_05_m27 = lv_05_i27 ^ iv_156 ^ lv_05_l27
     lv_05_m26 = lv_05_i26 ^ iv_155 ^ lv_05_l26
     lv_05_m25 = !lv_05_i25 ^ iv_154 ^ lv_05_l25
-    lv_05_m24 = lv_05_k24 ^ true ^ lv_05_l24
+    lv_05_m24 = lv_05_k24 ^ !lv_05_l24
     lv_05_m23 = lv_05_k23 ^ iv_152 ^ lv_05_l23
     lv_05_m22 = lv_05_k22 ^ iv_151 ^ lv_05_l22
     lv_05_m21 = lv_05_k21 ^ iv_150 ^ lv_05_l21
@@ -4927,7 +4927,7 @@ class SHA1BitwiseCompress0_T153 < SHA1WithoutCompress0
     www_19_20 = iv_502 ^ iv_342 ^ iv_150 ^ iv_086
     www_19_21 = iv_503 ^ iv_343 ^ iv_151 ^ iv_087
     www_19_22 = iv_504 ^ iv_344 ^ iv_152 ^ iv_088
-    www_19_23 = iv_505 ^ iv_345 ^ true ^ iv_089
+    www_19_23 = iv_505 ^ iv_345 ^ !iv_089
     www_19_24 = iv_506 ^ iv_346 ^ iv_154 ^ iv_090
     www_19_25 = iv_507 ^ iv_347 ^ iv_155 ^ iv_091
     www_19_26 = iv_508 ^ iv_348 ^ iv_156 ^ iv_092
@@ -5557,7 +5557,7 @@ class SHA1BitwiseCompress0_T153 < SHA1WithoutCompress0
     www_21_20 = www_18_21 ^ iv_406 ^ iv_214 ^ iv_150
     www_21_21 = www_18_22 ^ iv_407 ^ iv_215 ^ iv_151
     www_21_22 = www_18_23 ^ iv_408 ^ iv_216 ^ iv_152
-    www_21_23 = www_18_24 ^ iv_409 ^ iv_217 ^ true
+    www_21_23 = www_18_24 ^ iv_409 ^ !iv_217
     www_21_24 = www_18_25 ^ iv_410 ^ iv_218 ^ iv_154
     www_21_25 = www_18_26 ^ iv_411 ^ iv_219 ^ iv_155
     www_21_26 = www_18_27 ^ iv_412 ^ iv_220 ^ iv_156

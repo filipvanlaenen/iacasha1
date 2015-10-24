@@ -1320,7 +1320,7 @@ class SHA1BitwiseCompress0_T191 < SHA1WithoutCompress0
     lv_06_k01 = lv_06_i01 ^ !iv_032 ^ lv_06_j01
     lv_06_k00 = lv_06_i00 ^ aaa_01_30 ^ lv_06_j00
     lv_06_l30 = lv_06_k31 & iv_192
-    lv_06_l29 = (lv_06_k30 & true) | (lv_06_l30 & (lv_06_k30 | true))
+    lv_06_l29 = lv_06_k30 | lv_06_l30
     lv_06_l28 = (lv_06_k29 & iv_190) | (lv_06_l29 & (lv_06_k29 | iv_190))
     lv_06_l27 = (lv_06_k28 & iv_189) | (lv_06_l28 & (lv_06_k28 | iv_189))
     lv_06_l26 = (lv_06_k27 & iv_188) | (lv_06_l27 & (lv_06_k27 | iv_188))
@@ -1351,7 +1351,7 @@ class SHA1BitwiseCompress0_T191 < SHA1WithoutCompress0
     lv_06_l01 = (lv_06_k02 & iv_163) | (lv_06_l02 & (lv_06_k02 | iv_163))
     lv_06_l00 = (lv_06_k01 & iv_162) | (lv_06_l01 & (lv_06_k01 | iv_162))
     lv_06_m31 = lv_06_k31 ^ iv_192
-    lv_06_m30 = lv_06_k30 ^ true ^ lv_06_l30
+    lv_06_m30 = lv_06_k30 ^ !lv_06_l30
     lv_06_m29 = lv_06_k29 ^ iv_190 ^ lv_06_l29
     lv_06_m28 = lv_06_k28 ^ iv_189 ^ lv_06_l28
     lv_06_m27 = lv_06_k27 ^ iv_188 ^ lv_06_l27
@@ -5248,7 +5248,7 @@ class SHA1BitwiseCompress0_T191 < SHA1WithoutCompress0
     www_20_26 = www_17_27 ^ iv_380 ^ iv_188 ^ iv_124
     www_20_27 = www_17_28 ^ iv_381 ^ iv_189 ^ iv_125
     www_20_28 = www_17_29 ^ iv_382 ^ iv_190 ^ iv_126
-    www_20_29 = www_17_30 ^ iv_383 ^ true ^ iv_127
+    www_20_29 = www_17_30 ^ iv_383 ^ !iv_127
     www_20_30 = www_17_31 ^ iv_384 ^ iv_192 ^ iv_128
     www_20_31 = www_17_00 ^ iv_353 ^ iv_161 ^ iv_097
     lv_20_g00 = (aaa_18_00 & aaa_17_30) | (!aaa_18_00 & aaa_16_30)
@@ -5878,7 +5878,7 @@ class SHA1BitwiseCompress0_T191 < SHA1WithoutCompress0
     www_22_26 = www_19_27 ^ iv_444 ^ iv_252 ^ iv_188
     www_22_27 = www_19_28 ^ iv_445 ^ iv_253 ^ iv_189
     www_22_28 = www_19_29 ^ iv_446 ^ iv_254 ^ iv_190
-    www_22_29 = www_19_30 ^ iv_447 ^ iv_255 ^ true
+    www_22_29 = www_19_30 ^ iv_447 ^ !iv_255
     www_22_30 = www_19_31 ^ iv_448 ^ iv_256 ^ iv_192
     www_22_31 = www_19_00 ^ iv_417 ^ iv_225 ^ iv_161
     lv_22_g00 = aaa_20_00 ^ aaa_19_30 ^ aaa_18_30

@@ -6,9 +6,7 @@ class SHA1BitwiseCompress0_T028 < SHA1WithoutCompress0
     # Round 1 ##################################################################
     lv_01_l28 = iv_031 & iv_030
     lv_01_l27 = iv_029 | lv_01_l28
-    lv_01_l26 = true | lv_01_l27
-    lv_01_l25 = lv_01_l26 & iv_027
-    lv_01_l24 = lv_01_l25 & iv_026
+    lv_01_l24 = iv_027 & iv_026
     lv_01_l23 = lv_01_l24 & iv_025
     lv_01_l22 = iv_024 | lv_01_l23
     lv_01_l21 = iv_023 | lv_01_l22
@@ -35,9 +33,7 @@ class SHA1BitwiseCompress0_T028 < SHA1WithoutCompress0
     lv_01_l00 = iv_002 | lv_01_l01
     lv_01_m29 = iv_030 ^ iv_031
     lv_01_m28 = !iv_029 ^ lv_01_l28
-    lv_01_m27 = !true ^ lv_01_l27
-    lv_01_m26 = iv_027 ^ lv_01_l26
-    lv_01_m25 = iv_026 ^ lv_01_l25
+    lv_01_m25 = iv_026 ^ iv_027
     lv_01_m24 = iv_025 ^ lv_01_l24
     lv_01_m23 = !iv_024 ^ lv_01_l23
     lv_01_m22 = !iv_023 ^ lv_01_l22
@@ -66,8 +62,8 @@ class SHA1BitwiseCompress0_T028 < SHA1WithoutCompress0
     lv_01_n29 = iv_032 & !iv_031
     lv_01_n28 = lv_01_n29 & lv_01_m29
     lv_01_n27 = lv_01_m28 | lv_01_n28
-    lv_01_n26 = lv_01_m27 | lv_01_n27
-    lv_01_n25 = lv_01_n26 & lv_01_m26
+    lv_01_n26 = lv_01_l27 | lv_01_n27
+    lv_01_n25 = lv_01_n26 & !iv_027
     lv_01_n24 = lv_01_n25 & lv_01_m25
     lv_01_n23 = lv_01_m24 | lv_01_n24
     lv_01_n22 = lv_01_m23 | lv_01_n23
@@ -119,8 +115,8 @@ class SHA1BitwiseCompress0_T028 < SHA1WithoutCompress0
     aaa_01_23 = lv_01_m23 ^ !lv_01_n23
     aaa_01_24 = lv_01_m24 ^ !lv_01_n24
     aaa_01_25 = lv_01_m25 ^ lv_01_n25
-    aaa_01_26 = lv_01_m26 ^ lv_01_n26
-    aaa_01_27 = lv_01_m27 ^ !lv_01_n27
+    aaa_01_26 = !iv_027 ^ lv_01_n26
+    aaa_01_27 = lv_01_l27 ^ !lv_01_n27
     aaa_01_28 = lv_01_m28 ^ !lv_01_n28
     aaa_01_29 = lv_01_m29 ^ lv_01_n29
     aaa_01_30 = !iv_031 ^ iv_032
@@ -4300,7 +4296,7 @@ class SHA1BitwiseCompress0_T028 < SHA1WithoutCompress0
     www_17_23 = iv_441 ^ iv_281 ^ iv_089 ^ iv_025
     www_17_24 = iv_442 ^ iv_282 ^ iv_090 ^ iv_026
     www_17_25 = iv_443 ^ iv_283 ^ iv_091 ^ iv_027
-    www_17_26 = iv_444 ^ iv_284 ^ iv_092 ^ true
+    www_17_26 = iv_444 ^ iv_284 ^ !iv_092
     www_17_27 = iv_445 ^ iv_285 ^ iv_093 ^ iv_029
     www_17_28 = iv_446 ^ iv_286 ^ iv_094 ^ iv_030
     www_17_29 = iv_447 ^ iv_287 ^ iv_095 ^ iv_031

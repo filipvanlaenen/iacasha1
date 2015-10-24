@@ -778,7 +778,7 @@ class SHA1BitwiseCompress0_T117 < SHA1WithoutCompress0
     lv_04_l22 = (lv_04_k23 & iv_120) | (lv_04_l23 & (lv_04_k23 | iv_120))
     lv_04_l21 = (lv_04_k22 & iv_119) | (lv_04_l22 & (lv_04_k22 | iv_119))
     lv_04_l20 = (lv_04_k21 & iv_118) | (lv_04_l21 & (lv_04_k21 | iv_118))
-    lv_04_l19 = (lv_04_k20 & true) | (lv_04_l20 & (lv_04_k20 | true))
+    lv_04_l19 = lv_04_k20 | lv_04_l20
     lv_04_l18 = (lv_04_k19 & iv_116) | (lv_04_l19 & (lv_04_k19 | iv_116))
     lv_04_l17 = (lv_04_k18 & iv_115) | (lv_04_l18 & (lv_04_k18 | iv_115))
     lv_04_l16 = (lv_04_k17 & iv_114) | (lv_04_l17 & (lv_04_k17 | iv_114))
@@ -809,7 +809,7 @@ class SHA1BitwiseCompress0_T117 < SHA1WithoutCompress0
     lv_04_m23 = lv_04_k23 ^ iv_120 ^ lv_04_l23
     lv_04_m22 = lv_04_k22 ^ iv_119 ^ lv_04_l22
     lv_04_m21 = lv_04_k21 ^ iv_118 ^ lv_04_l21
-    lv_04_m20 = lv_04_k20 ^ true ^ lv_04_l20
+    lv_04_m20 = lv_04_k20 ^ !lv_04_l20
     lv_04_m19 = lv_04_k19 ^ iv_116 ^ lv_04_l19
     lv_04_m18 = lv_04_k18 ^ iv_115 ^ lv_04_l18
     lv_04_m17 = lv_04_k17 ^ iv_114 ^ lv_04_l17
@@ -4608,7 +4608,7 @@ class SHA1BitwiseCompress0_T117 < SHA1WithoutCompress0
     www_18_16 = iv_466 ^ iv_306 ^ iv_114 ^ iv_050
     www_18_17 = iv_467 ^ iv_307 ^ iv_115 ^ iv_051
     www_18_18 = iv_468 ^ iv_308 ^ iv_116 ^ iv_052
-    www_18_19 = iv_469 ^ iv_309 ^ true ^ iv_053
+    www_18_19 = iv_469 ^ iv_309 ^ !iv_053
     www_18_20 = iv_470 ^ iv_310 ^ iv_118 ^ iv_054
     www_18_21 = iv_471 ^ iv_311 ^ iv_119 ^ iv_055
     www_18_22 = iv_472 ^ iv_312 ^ iv_120 ^ iv_056
@@ -5238,7 +5238,7 @@ class SHA1BitwiseCompress0_T117 < SHA1WithoutCompress0
     www_20_16 = www_17_17 ^ iv_370 ^ iv_178 ^ iv_114
     www_20_17 = www_17_18 ^ iv_371 ^ iv_179 ^ iv_115
     www_20_18 = www_17_19 ^ iv_372 ^ iv_180 ^ iv_116
-    www_20_19 = www_17_20 ^ iv_373 ^ iv_181 ^ true
+    www_20_19 = www_17_20 ^ iv_373 ^ !iv_181
     www_20_20 = www_17_21 ^ iv_374 ^ iv_182 ^ iv_118
     www_20_21 = www_17_22 ^ iv_375 ^ iv_183 ^ iv_119
     www_20_22 = www_17_23 ^ iv_376 ^ iv_184 ^ iv_120

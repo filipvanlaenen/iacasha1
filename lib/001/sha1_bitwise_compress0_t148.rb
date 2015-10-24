@@ -1048,7 +1048,7 @@ class SHA1BitwiseCompress0_T148 < SHA1WithoutCompress0
     lv_05_l21 = (lv_05_k22 & iv_151) | (lv_05_l22 & (lv_05_k22 | iv_151))
     lv_05_l20 = (lv_05_k21 & iv_150) | (lv_05_l21 & (lv_05_k21 | iv_150))
     lv_05_l19 = (lv_05_k20 & iv_149) | (lv_05_l20 & (lv_05_k20 | iv_149))
-    lv_05_l18 = (lv_05_k19 & true) | (lv_05_l19 & (lv_05_k19 | true))
+    lv_05_l18 = lv_05_k19 | lv_05_l19
     lv_05_l17 = (lv_05_k18 & iv_147) | (lv_05_l18 & (lv_05_k18 | iv_147))
     lv_05_l16 = (lv_05_k17 & iv_146) | (lv_05_l17 & (lv_05_k17 | iv_146))
     lv_05_l15 = (lv_05_k16 & iv_145) | (lv_05_l16 & (lv_05_k16 | iv_145))
@@ -1079,7 +1079,7 @@ class SHA1BitwiseCompress0_T148 < SHA1WithoutCompress0
     lv_05_m22 = lv_05_k22 ^ iv_151 ^ lv_05_l22
     lv_05_m21 = lv_05_k21 ^ iv_150 ^ lv_05_l21
     lv_05_m20 = lv_05_k20 ^ iv_149 ^ lv_05_l20
-    lv_05_m19 = lv_05_k19 ^ true ^ lv_05_l19
+    lv_05_m19 = lv_05_k19 ^ !lv_05_l19
     lv_05_m18 = lv_05_k18 ^ iv_147 ^ lv_05_l18
     lv_05_m17 = lv_05_k17 ^ iv_146 ^ lv_05_l17
     lv_05_m16 = lv_05_k16 ^ iv_145 ^ lv_05_l16
@@ -4922,7 +4922,7 @@ class SHA1BitwiseCompress0_T148 < SHA1WithoutCompress0
     www_19_15 = iv_497 ^ iv_337 ^ iv_145 ^ iv_081
     www_19_16 = iv_498 ^ iv_338 ^ iv_146 ^ iv_082
     www_19_17 = iv_499 ^ iv_339 ^ iv_147 ^ iv_083
-    www_19_18 = iv_500 ^ iv_340 ^ true ^ iv_084
+    www_19_18 = iv_500 ^ iv_340 ^ !iv_084
     www_19_19 = iv_501 ^ iv_341 ^ iv_149 ^ iv_085
     www_19_20 = iv_502 ^ iv_342 ^ iv_150 ^ iv_086
     www_19_21 = iv_503 ^ iv_343 ^ iv_151 ^ iv_087
@@ -5552,7 +5552,7 @@ class SHA1BitwiseCompress0_T148 < SHA1WithoutCompress0
     www_21_15 = www_18_16 ^ iv_401 ^ iv_209 ^ iv_145
     www_21_16 = www_18_17 ^ iv_402 ^ iv_210 ^ iv_146
     www_21_17 = www_18_18 ^ iv_403 ^ iv_211 ^ iv_147
-    www_21_18 = www_18_19 ^ iv_404 ^ iv_212 ^ true
+    www_21_18 = www_18_19 ^ iv_404 ^ !iv_212
     www_21_19 = www_18_20 ^ iv_405 ^ iv_213 ^ iv_149
     www_21_20 = www_18_21 ^ iv_406 ^ iv_214 ^ iv_150
     www_21_21 = www_18_22 ^ iv_407 ^ iv_215 ^ iv_151

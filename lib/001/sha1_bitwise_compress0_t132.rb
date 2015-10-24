@@ -1064,7 +1064,7 @@ class SHA1BitwiseCompress0_T132 < SHA1WithoutCompress0
     lv_05_l05 = (lv_05_k06 & iv_135) | (lv_05_l06 & (lv_05_k06 | iv_135))
     lv_05_l04 = (lv_05_k05 & iv_134) | (lv_05_l05 & (lv_05_k05 | iv_134))
     lv_05_l03 = (lv_05_k04 & iv_133) | (lv_05_l04 & (lv_05_k04 | iv_133))
-    lv_05_l02 = (lv_05_k03 & true) | (lv_05_l03 & (lv_05_k03 | true))
+    lv_05_l02 = lv_05_k03 | lv_05_l03
     lv_05_l01 = (lv_05_k02 & iv_131) | (lv_05_l02 & (lv_05_k02 | iv_131))
     lv_05_l00 = (lv_05_k01 & iv_130) | (lv_05_l01 & (lv_05_k01 | iv_130))
     lv_05_m31 = lv_05_i31 ^ iv_160
@@ -1095,7 +1095,7 @@ class SHA1BitwiseCompress0_T132 < SHA1WithoutCompress0
     lv_05_m06 = lv_05_k06 ^ iv_135 ^ lv_05_l06
     lv_05_m05 = lv_05_k05 ^ iv_134 ^ lv_05_l05
     lv_05_m04 = lv_05_k04 ^ iv_133 ^ lv_05_l04
-    lv_05_m03 = lv_05_k03 ^ true ^ lv_05_l03
+    lv_05_m03 = lv_05_k03 ^ !lv_05_l03
     lv_05_m02 = lv_05_k02 ^ iv_131 ^ lv_05_l02
     lv_05_m01 = lv_05_k01 ^ iv_130 ^ lv_05_l01
     lv_05_m00 = lv_05_k00 ^ iv_129 ^ lv_05_l00
@@ -4906,7 +4906,7 @@ class SHA1BitwiseCompress0_T132 < SHA1WithoutCompress0
     # Round 19 #################################################################
     www_19_00 = iv_482 ^ iv_322 ^ iv_130 ^ iv_066
     www_19_01 = iv_483 ^ iv_323 ^ iv_131 ^ iv_067
-    www_19_02 = iv_484 ^ iv_324 ^ true ^ iv_068
+    www_19_02 = iv_484 ^ iv_324 ^ !iv_068
     www_19_03 = iv_485 ^ iv_325 ^ iv_133 ^ iv_069
     www_19_04 = iv_486 ^ iv_326 ^ iv_134 ^ iv_070
     www_19_05 = iv_487 ^ iv_327 ^ iv_135 ^ iv_071
@@ -5536,7 +5536,7 @@ class SHA1BitwiseCompress0_T132 < SHA1WithoutCompress0
     # Round 21 #################################################################
     www_21_00 = www_18_01 ^ iv_386 ^ iv_194 ^ iv_130
     www_21_01 = www_18_02 ^ iv_387 ^ iv_195 ^ iv_131
-    www_21_02 = www_18_03 ^ iv_388 ^ iv_196 ^ true
+    www_21_02 = www_18_03 ^ iv_388 ^ !iv_196
     www_21_03 = www_18_04 ^ iv_389 ^ iv_197 ^ iv_133
     www_21_04 = www_18_05 ^ iv_390 ^ iv_198 ^ iv_134
     www_21_05 = www_18_06 ^ iv_391 ^ iv_199 ^ iv_135
