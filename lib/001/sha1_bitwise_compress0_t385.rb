@@ -3362,7 +3362,7 @@ class SHA1BitwiseCompress0_T385 < SHA1WithoutCompress0
     lv_13_m03 = lv_13_k03 ^ iv_388 ^ lv_13_l03
     lv_13_m02 = lv_13_k02 ^ iv_387 ^ lv_13_l02
     lv_13_m01 = lv_13_k01 ^ iv_386 ^ lv_13_l01
-    lv_13_m00 = lv_13_k00 ^ true ^ lv_13_l00
+    lv_13_m00 = lv_13_k00 ^ !lv_13_l00
     lv_13_n29 = lv_13_m31 & lv_13_m30
     lv_13_n28 = lv_13_n29 & lv_13_m29
     lv_13_n27 = lv_13_m28 | lv_13_n28
@@ -5565,7 +5565,7 @@ class SHA1BitwiseCompress0_T385 < SHA1WithoutCompress0
     www_21_28 = www_18_29 ^ iv_414 ^ iv_222 ^ iv_158
     www_21_29 = www_18_30 ^ iv_415 ^ iv_223 ^ iv_159
     www_21_30 = www_18_31 ^ iv_416 ^ iv_224 ^ iv_160
-    www_21_31 = www_18_00 ^ true ^ iv_193 ^ iv_129
+    www_21_31 = www_18_00 ^ !iv_193 ^ iv_129
     lv_21_g00 = aaa_19_00 ^ aaa_18_30 ^ aaa_17_30
     lv_21_g01 = aaa_19_01 ^ !lv_18_m31 ^ !lv_17_m31
     lv_21_g02 = aaa_19_02 ^ aaa_18_00 ^ aaa_17_00
@@ -7455,7 +7455,7 @@ class SHA1BitwiseCompress0_T385 < SHA1WithoutCompress0
     www_27_28 = www_24_29 ^ www_19_29 ^ iv_414 ^ iv_350
     www_27_29 = www_24_30 ^ www_19_30 ^ iv_415 ^ iv_351
     www_27_30 = www_24_31 ^ www_19_31 ^ iv_416 ^ iv_352
-    www_27_31 = www_24_00 ^ www_19_00 ^ true ^ iv_321
+    www_27_31 = www_24_00 ^ www_19_00 ^ !iv_321
     lv_27_g00 = aaa_25_00 ^ aaa_24_30 ^ aaa_23_30
     lv_27_g01 = aaa_25_01 ^ !lv_24_m31 ^ !lv_23_m31
     lv_27_g02 = aaa_25_02 ^ aaa_24_00 ^ aaa_23_00
@@ -8085,7 +8085,7 @@ class SHA1BitwiseCompress0_T385 < SHA1WithoutCompress0
     www_29_28 = www_26_29 ^ www_21_29 ^ iv_478 ^ iv_414
     www_29_29 = www_26_30 ^ www_21_30 ^ iv_479 ^ iv_415
     www_29_30 = www_26_31 ^ www_21_31 ^ iv_480 ^ iv_416
-    www_29_31 = www_26_00 ^ www_21_00 ^ iv_449 ^ true
+    www_29_31 = www_26_00 ^ www_21_00 ^ !iv_449
     lv_29_g00 = aaa_27_00 ^ aaa_26_30 ^ aaa_25_30
     lv_29_g01 = aaa_27_01 ^ !lv_26_m31 ^ !lv_25_m31
     lv_29_g02 = aaa_27_02 ^ aaa_26_00 ^ aaa_25_00

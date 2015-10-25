@@ -2734,8 +2734,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_11_k02 = lv_11_i02 ^ aaa_06_00 ^ lv_11_j02
     lv_11_k01 = lv_11_i01 ^ !lv_06_m31 ^ lv_11_j01
     lv_11_k00 = lv_11_i00 ^ aaa_06_30 ^ lv_11_j00
-    lv_11_l30 = lv_11_k31 & true
-    lv_11_l29 = (lv_11_k30 & iv_351) | (lv_11_l30 & (lv_11_k30 | iv_351))
+    lv_11_l29 = (lv_11_k30 & iv_351) | (lv_11_k31 & (lv_11_k30 | iv_351))
     lv_11_l28 = (lv_11_k29 & iv_350) | (lv_11_l29 & (lv_11_k29 | iv_350))
     lv_11_l27 = (lv_11_k28 & iv_349) | (lv_11_l28 & (lv_11_k28 | iv_349))
     lv_11_l26 = (lv_11_k27 & iv_348) | (lv_11_l27 & (lv_11_k27 | iv_348))
@@ -2765,8 +2764,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_11_l02 = (lv_11_k03 & iv_324) | (lv_11_l03 & (lv_11_k03 | iv_324))
     lv_11_l01 = (lv_11_k02 & iv_323) | (lv_11_l02 & (lv_11_k02 | iv_323))
     lv_11_l00 = (lv_11_k01 & iv_322) | (lv_11_l01 & (lv_11_k01 | iv_322))
-    lv_11_m31 = lv_11_k31 ^ true
-    lv_11_m30 = lv_11_k30 ^ iv_351 ^ lv_11_l30
+    lv_11_m30 = lv_11_k30 ^ iv_351 ^ lv_11_k31
     lv_11_m29 = lv_11_k29 ^ iv_350 ^ lv_11_l29
     lv_11_m28 = lv_11_k28 ^ iv_349 ^ lv_11_l28
     lv_11_m27 = lv_11_k27 ^ iv_348 ^ lv_11_l27
@@ -2797,7 +2795,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_11_m02 = lv_11_k02 ^ iv_323 ^ lv_11_l02
     lv_11_m01 = lv_11_k01 ^ iv_322 ^ lv_11_l01
     lv_11_m00 = lv_11_k00 ^ iv_321 ^ lv_11_l00
-    lv_11_n29 = lv_11_m31 & lv_11_m30
+    lv_11_n29 = !lv_11_k31 & lv_11_m30
     lv_11_n28 = lv_11_n29 & lv_11_m29
     lv_11_n27 = lv_11_m28 | lv_11_n28
     lv_11_n26 = lv_11_m27 | lv_11_n27
@@ -2857,7 +2855,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     aaa_11_27 = lv_11_m27 ^ !lv_11_n27
     aaa_11_28 = lv_11_m28 ^ !lv_11_n28
     aaa_11_29 = lv_11_m29 ^ lv_11_n29
-    aaa_11_30 = lv_11_m30 ^ lv_11_m31
+    aaa_11_30 = lv_11_m30 ^ !lv_11_k31
     # Round 12 #################################################################
     lv_12_g00 = (aaa_10_00 & aaa_09_30) | (!aaa_10_00 & aaa_08_30)
     lv_12_g01 = (aaa_10_01 & !lv_09_m31) | (!aaa_10_01 & !lv_08_m31)
@@ -2896,7 +2894,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_12_h28 = (aaa_11_02 & lv_12_g29) | (lv_12_h29 & (aaa_11_02 | lv_12_g29))
     lv_12_h27 = (aaa_11_01 & lv_12_g28) | (lv_12_h28 & (aaa_11_01 | lv_12_g28))
     lv_12_h26 = (aaa_11_00 & lv_12_g27) | (lv_12_h27 & (aaa_11_00 | lv_12_g27))
-    lv_12_h25 = (!lv_11_m31 & lv_12_g26) | (lv_12_h26 & (!lv_11_m31 | lv_12_g26))
+    lv_12_h25 = (lv_11_k31 & lv_12_g26) | (lv_12_h26 & (lv_11_k31 | lv_12_g26))
     lv_12_h24 = (aaa_11_30 & lv_12_g25) | (lv_12_h25 & (aaa_11_30 | lv_12_g25))
     lv_12_h23 = (aaa_11_29 & lv_12_g24) | (lv_12_h24 & (aaa_11_29 | lv_12_g24))
     lv_12_h22 = (aaa_11_28 & lv_12_g23) | (lv_12_h23 & (aaa_11_28 | lv_12_g23))
@@ -2927,7 +2925,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_12_i29 = aaa_11_02 ^ lv_12_g29 ^ lv_12_h29
     lv_12_i28 = aaa_11_01 ^ lv_12_g28 ^ lv_12_h28
     lv_12_i27 = aaa_11_00 ^ lv_12_g27 ^ lv_12_h27
-    lv_12_i26 = !lv_11_m31 ^ lv_12_g26 ^ lv_12_h26
+    lv_12_i26 = lv_11_k31 ^ lv_12_g26 ^ lv_12_h26
     lv_12_i25 = aaa_11_30 ^ lv_12_g25 ^ lv_12_h25
     lv_12_i24 = aaa_11_29 ^ lv_12_g24 ^ lv_12_h24
     lv_12_i23 = aaa_11_28 ^ lv_12_g23 ^ lv_12_h23
@@ -3173,7 +3171,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_13_g28 = (aaa_11_28 & aaa_10_26) | (!aaa_11_28 & aaa_09_26)
     lv_13_g29 = (aaa_11_29 & aaa_10_27) | (!aaa_11_29 & aaa_09_27)
     lv_13_g30 = (aaa_11_30 & aaa_10_28) | (!aaa_11_30 & aaa_09_28)
-    lv_13_g31 = (!lv_11_m31 & aaa_10_29) | (lv_11_m31 & aaa_09_29)
+    lv_13_g31 = (lv_11_k31 & aaa_10_29) | (!lv_11_k31 & aaa_09_29)
     lv_13_h30 = aaa_12_04 & lv_13_g31
     lv_13_h29 = (aaa_12_03 & lv_13_g30) | (lv_13_h30 & (aaa_12_03 | lv_13_g30))
     lv_13_h28 = (aaa_12_02 & lv_13_g29) | (lv_13_h29 & (aaa_12_02 | lv_13_g29))
@@ -3426,7 +3424,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     aaa_13_30 = lv_13_m30 ^ lv_13_m31
     # Round 14 #################################################################
     lv_14_g00 = (aaa_12_00 & aaa_11_30) | (!aaa_12_00 & aaa_10_30)
-    lv_14_g01 = (aaa_12_01 & !lv_11_m31) | (!aaa_12_01 & !lv_10_m31)
+    lv_14_g01 = (aaa_12_01 & lv_11_k31) | (!aaa_12_01 & !lv_10_m31)
     lv_14_g02 = (aaa_12_02 & aaa_11_00) | (!aaa_12_02 & aaa_10_00)
     lv_14_g03 = (aaa_12_03 & aaa_11_01) | (!aaa_12_03 & aaa_10_01)
     lv_14_g04 = (aaa_12_04 & aaa_11_02) | (!aaa_12_04 & aaa_10_02)
@@ -3709,7 +3707,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     aaa_14_30 = lv_14_m30 ^ lv_14_m31
     # Round 15 #################################################################
     lv_15_g00 = (aaa_13_00 & aaa_12_30) | (!aaa_13_00 & aaa_11_30)
-    lv_15_g01 = (aaa_13_01 & !lv_12_m31) | (!aaa_13_01 & !lv_11_m31)
+    lv_15_g01 = (aaa_13_01 & !lv_12_m31) | (!aaa_13_01 & lv_11_k31)
     lv_15_g02 = (aaa_13_02 & aaa_12_00) | (!aaa_13_02 & aaa_11_00)
     lv_15_g03 = (aaa_13_03 & aaa_12_01) | (!aaa_13_03 & aaa_11_01)
     lv_15_g04 = (aaa_13_04 & aaa_12_02) | (!aaa_13_04 & aaa_11_02)
@@ -4116,7 +4114,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_16_j03 = (lv_16_i04 & aaa_11_02) | (lv_16_j04 & (lv_16_i04 | aaa_11_02))
     lv_16_j02 = (lv_16_i03 & aaa_11_01) | (lv_16_j03 & (lv_16_i03 | aaa_11_01))
     lv_16_j01 = (lv_16_i02 & aaa_11_00) | (lv_16_j02 & (lv_16_i02 | aaa_11_00))
-    lv_16_j00 = (lv_16_i01 & !lv_11_m31) | (lv_16_j01 & (lv_16_i01 | !lv_11_m31))
+    lv_16_j00 = (lv_16_i01 & lv_11_k31) | (lv_16_j01 & (lv_16_i01 | lv_11_k31))
     lv_16_k31 = lv_16_i31 ^ aaa_11_29
     lv_16_k30 = lv_16_i30 ^ aaa_11_28 ^ lv_16_j30
     lv_16_k29 = lv_16_i29 ^ aaa_11_27 ^ lv_16_j29
@@ -4147,7 +4145,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     lv_16_k04 = lv_16_i04 ^ aaa_11_02 ^ lv_16_j04
     lv_16_k03 = lv_16_i03 ^ aaa_11_01 ^ lv_16_j03
     lv_16_k02 = lv_16_i02 ^ aaa_11_00 ^ lv_16_j02
-    lv_16_k01 = lv_16_i01 ^ !lv_11_m31 ^ lv_16_j01
+    lv_16_k01 = lv_16_i01 ^ lv_11_k31 ^ lv_16_j01
     lv_16_k00 = lv_16_i00 ^ aaa_11_30 ^ lv_16_j00
     lv_16_l30 = lv_16_k31 & iv_512
     lv_16_l29 = (lv_16_k30 & iv_511) | (lv_16_l30 & (lv_16_k30 | iv_511))
@@ -4934,7 +4932,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     www_19_27 = iv_509 ^ iv_349 ^ iv_157 ^ iv_093
     www_19_28 = iv_510 ^ iv_350 ^ iv_158 ^ iv_094
     www_19_29 = iv_511 ^ iv_351 ^ iv_159 ^ iv_095
-    www_19_30 = iv_512 ^ true ^ iv_160 ^ iv_096
+    www_19_30 = iv_512 ^ !iv_160 ^ iv_096
     www_19_31 = iv_481 ^ iv_321 ^ iv_129 ^ iv_065
     lv_19_g00 = (aaa_17_00 & aaa_16_30) | (!aaa_17_00 & aaa_15_30)
     lv_19_g01 = (aaa_17_01 & !lv_16_m31) | (!aaa_17_01 & !lv_15_m31)
@@ -6824,7 +6822,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     www_25_27 = www_22_28 ^ www_17_28 ^ iv_349 ^ iv_285
     www_25_28 = www_22_29 ^ www_17_29 ^ iv_350 ^ iv_286
     www_25_29 = www_22_30 ^ www_17_30 ^ iv_351 ^ iv_287
-    www_25_30 = www_22_31 ^ www_17_31 ^ true ^ iv_288
+    www_25_30 = www_22_31 ^ www_17_31 ^ !iv_288
     www_25_31 = www_22_00 ^ www_17_00 ^ iv_321 ^ iv_257
     lv_25_g00 = aaa_23_00 ^ aaa_22_30 ^ aaa_21_30
     lv_25_g01 = aaa_23_01 ^ !lv_22_m31 ^ !lv_21_m31
@@ -7454,7 +7452,7 @@ class SHA1BitwiseCompress0_T352 < SHA1WithoutCompress0
     www_27_27 = www_24_28 ^ www_19_28 ^ iv_413 ^ iv_349
     www_27_28 = www_24_29 ^ www_19_29 ^ iv_414 ^ iv_350
     www_27_29 = www_24_30 ^ www_19_30 ^ iv_415 ^ iv_351
-    www_27_30 = www_24_31 ^ www_19_31 ^ iv_416 ^ true
+    www_27_30 = www_24_31 ^ www_19_31 ^ !iv_416
     www_27_31 = www_24_00 ^ www_19_00 ^ iv_385 ^ iv_321
     lv_27_g00 = aaa_25_00 ^ aaa_24_30 ^ aaa_23_30
     lv_27_g01 = aaa_25_01 ^ !lv_24_m31 ^ !lv_23_m31
