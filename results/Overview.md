@@ -31,6 +31,7 @@ Results better than the exponential reduction are marked in bold.
 |       3      | 4.17×10⁻³             | 1.00×10⁰       | Many |
 |       4      | 6.71×10⁻⁴             | 1.00×10⁰       | Many |
 
+![Least Complex Input Bit](Least_Complex_Input_Bit.png "Least Complex Input Bit")
 
 ## Total Complexity
 
