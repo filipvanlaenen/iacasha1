@@ -5,6 +5,33 @@ sections below give an overview of the project using the total complexity of
 the function, the number of operations in the function and the number of
 assignments.
 
+## Complexity of the Least Complex Input Bit
+
+The complexity of an input bit is calculated as the number of times it appears
+in the calculation of an output bit. If an input bit has been eliminated from
+the calculation of the output bits, a collission has been found as the result
+of the function will be the same regardless of the value of the eliminiated
+input bit. In that case, its complexity will have been reduced to zero.
+
+The performance of the project can be benchmarked against an exponential
+reduction of the complexity of the least complex input bit, starting from the
+complexity of the least complex input bit for the situation where no input bit
+has been fixed. The goal is to reduce this value to zero for 511 input bits
+fixed. Notice however that the measured values will not necessarily relate to
+the same input bit: a restriction may reduce the complexity of one input bit
+below the complexity of the least complex input bit from the previous round.
+
+Results better than the exponential reduction are marked in bold.
+
+| Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
+|:------------:|:---------------------:|:--------------:| ---------------- |
+|       0      | 1.00×10⁰              | 1.00×10⁰       | [Initial Situation](000/000.md) |
+|       1      | 1.61×10⁻¹             | 1.00×10⁰       | Many |
+|       2      | 2.59×10⁻²             | 1.00×10⁰       | Many |
+|       3      | 4.17×10⁻³             | 1.00×10⁰       | Many |
+|       4      | 6.71×10⁻⁴             | 1.00×10⁰       | Many |
+
+
 ## Total Complexity
 
 The complexity of the function is measured as the total number of times each
