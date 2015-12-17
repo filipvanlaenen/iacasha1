@@ -106,7 +106,6 @@ class SHA1BitwiseCompress0_F006_F008_F009_F010_T012_F015_F019_T024_F027_T029_F03
     lv_02_k06 = lv_02_i06 ^ lv_02_j06
     lv_02_k05 = lv_02_i05 ^ lv_02_j05
     lv_02_k04 = lv_02_h04 ^ lv_02_j04
-    lv_02_k00 = !iv_007 ^ !iv_007
     lv_02_l30 = aaa_01_04 & iv_064
     lv_02_l29 = (aaa_01_03 & iv_063) | (lv_02_l30 & (aaa_01_03 | iv_063))
     lv_02_l28 = (lv_02_k29 & iv_062) | (lv_02_l29 & (lv_02_k29 | iv_062))
@@ -169,7 +168,7 @@ class SHA1BitwiseCompress0_F006_F008_F009_F010_T012_F015_F019_T024_F027_T029_F03
     lv_02_m03 = lv_02_j03 ^ iv_036 ^ lv_02_l03
     lv_02_m02 = iv_035 ^ lv_02_l02
     lv_02_m01 = iv_007 ^ iv_034 ^ lv_02_l01
-    lv_02_m00 = lv_02_k00 ^ iv_033 ^ lv_02_l00
+    lv_02_m00 = iv_033 ^ lv_02_l00
     lv_02_n29 = lv_02_m31 & lv_02_m30
     lv_02_n28 = lv_02_n29 & lv_02_m29
     lv_02_n27 = lv_02_m28 | lv_02_n28

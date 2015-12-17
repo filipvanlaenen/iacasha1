@@ -93,7 +93,9 @@ class SHA1BitwiseCompress0_T003_F005_T006_F019_T024_F027_T028_T029_F030_F031_F03
     lv_02_i02 = aaa_01_07 ^ !lv_02_h02
     lv_02_i01 = aaa_01_06 ^ !lv_02_h01
     lv_02_i00 = aaa_01_05 ^ !lv_02_h00
-    lv_02_j25 = lv_02_h26 | lv_02_i27
+    lv_02_j27 = !iv_004 & lv_02_i28
+    lv_02_j26 = lv_02_i27 | lv_02_j27
+    lv_02_j25 = lv_02_h26 | lv_02_j26
     lv_02_j17 = aaa_01_24 & !lv_01_n23
     lv_02_j16 = aaa_01_22 | lv_02_j17
     lv_02_j15 = lv_02_j16 & aaa_01_21
@@ -112,7 +114,9 @@ class SHA1BitwiseCompress0_T003_F005_T006_F019_T024_F027_T028_T029_F030_F031_F03
     lv_02_j02 = lv_02_i03 | lv_02_j03
     lv_02_j01 = lv_02_j02 & lv_02_i02
     lv_02_j00 = lv_02_j01 & lv_02_i01
-    lv_02_k26 = lv_02_h26 ^ !lv_02_i27
+    lv_02_k28 = lv_02_i28 ^ !iv_004
+    lv_02_k27 = lv_02_i27 ^ !lv_02_j27
+    lv_02_k26 = lv_02_h26 ^ !lv_02_j26
     lv_02_k18 = !lv_01_n23 ^ aaa_01_24
     lv_02_k17 = aaa_01_22 ^ !lv_02_j17
     lv_02_k16 = aaa_01_21 ^ lv_02_j16
@@ -135,8 +139,8 @@ class SHA1BitwiseCompress0_T003_F005_T006_F019_T024_F027_T028_T029_F030_F031_F03
     lv_02_l30 = lv_01_n04 & iv_064
     lv_02_l29 = (iv_004 & iv_063) | (lv_02_l30 & (iv_004 | iv_063))
     lv_02_l28 = iv_062 | lv_02_l29
-    lv_02_l27 = (lv_02_i28 & iv_061) | (lv_02_l28 & (lv_02_i28 | iv_061))
-    lv_02_l26 = (!lv_02_i27 & iv_060) | (lv_02_l27 & (!lv_02_i27 | iv_060))
+    lv_02_l27 = (lv_02_k28 & iv_061) | (lv_02_l28 & (lv_02_k28 | iv_061))
+    lv_02_l26 = (lv_02_k27 & iv_060) | (lv_02_l27 & (lv_02_k27 | iv_060))
     lv_02_l25 = (lv_02_k26 & iv_059) | (lv_02_l26 & (lv_02_k26 | iv_059))
     lv_02_l24 = (lv_02_j25 & iv_058) | (lv_02_l25 & (lv_02_j25 | iv_058))
     lv_02_l23 = iv_057 | lv_02_l24
@@ -166,8 +170,8 @@ class SHA1BitwiseCompress0_T003_F005_T006_F019_T024_F027_T028_T029_F030_F031_F03
     lv_02_m31 = lv_01_n04 ^ iv_064
     lv_02_m30 = iv_004 ^ iv_063 ^ lv_02_l30
     lv_02_m29 = !iv_062 ^ lv_02_l29
-    lv_02_m28 = lv_02_i28 ^ iv_061 ^ lv_02_l28
-    lv_02_m27 = !lv_02_i27 ^ iv_060 ^ lv_02_l27
+    lv_02_m28 = lv_02_k28 ^ iv_061 ^ lv_02_l28
+    lv_02_m27 = lv_02_k27 ^ iv_060 ^ lv_02_l27
     lv_02_m26 = lv_02_k26 ^ iv_059 ^ lv_02_l26
     lv_02_m25 = lv_02_j25 ^ iv_058 ^ lv_02_l25
     lv_02_m24 = !iv_057 ^ lv_02_l24
