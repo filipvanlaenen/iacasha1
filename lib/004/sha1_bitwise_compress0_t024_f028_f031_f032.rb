@@ -48,7 +48,10 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_01_m02 = iv_003 ^ lv_01_l02
     lv_01_m01 = !iv_002 ^ lv_01_l01
     lv_01_m00 = iv_001 ^ lv_01_l00
-    lv_01_n22 = lv_01_l23 | lv_01_m24
+    lv_01_n25 = !iv_029 & lv_01_m26
+    lv_01_n24 = lv_01_n25 & lv_01_m25
+    lv_01_n23 = lv_01_m24 | lv_01_n24
+    lv_01_n22 = lv_01_l23 | lv_01_n23
     lv_01_n21 = lv_01_n22 & iv_023
     lv_01_n20 = lv_01_n21 & iv_022
     lv_01_n19 = iv_021 | lv_01_n20
@@ -94,7 +97,10 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     aaa_01_20 = iv_021 ^ !lv_01_n20
     aaa_01_21 = iv_022 ^ lv_01_n21
     aaa_01_22 = iv_023 ^ lv_01_n22
-    aaa_01_23 = lv_01_l23 ^ !lv_01_m24
+    aaa_01_23 = lv_01_l23 ^ !lv_01_n23
+    aaa_01_24 = lv_01_m24 ^ !lv_01_n24
+    aaa_01_25 = lv_01_m25 ^ lv_01_n25
+    aaa_01_26 = lv_01_m26 ^ !iv_029
     # Round 2 ##################################################################
     lv_02_h28 = aaa_01_02 | aaa_01_03
     lv_02_h27 = aaa_01_01 | lv_02_h28
@@ -133,9 +139,9 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_02_j25 = lv_02_h26 | lv_02_j26
     lv_02_j22 = iv_030 & !iv_029
     lv_02_j21 = lv_02_j22 & iv_029
-    lv_02_j20 = lv_01_m26 | lv_02_j21
-    lv_02_j19 = lv_02_j20 & lv_01_m25
-    lv_02_j18 = !lv_01_m24 | lv_02_j19
+    lv_02_j20 = aaa_01_26 | lv_02_j21
+    lv_02_j19 = lv_02_j20 & aaa_01_25
+    lv_02_j18 = aaa_01_24 | lv_02_j19
     lv_02_j17 = lv_02_j18 & aaa_01_23
     lv_02_j16 = aaa_01_22 | lv_02_j17
     lv_02_j15 = lv_02_j16 & aaa_01_21
@@ -160,9 +166,9 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_02_k26 = lv_02_h26 ^ !lv_02_j26
     lv_02_k23 = !iv_029 ^ iv_030
     lv_02_k22 = iv_029 ^ lv_02_j22
-    lv_02_k21 = lv_01_m26 ^ !lv_02_j21
-    lv_02_k20 = lv_01_m25 ^ lv_02_j20
-    lv_02_k19 = !lv_01_m24 ^ !lv_02_j19
+    lv_02_k21 = aaa_01_26 ^ !lv_02_j21
+    lv_02_k20 = aaa_01_25 ^ lv_02_j20
+    lv_02_k19 = aaa_01_24 ^ !lv_02_j19
     lv_02_k18 = aaa_01_23 ^ lv_02_j18
     lv_02_k17 = aaa_01_22 ^ !lv_02_j17
     lv_02_k16 = aaa_01_21 ^ lv_02_j16
@@ -307,7 +313,7 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     aaa_02_29 = lv_02_m29 ^ lv_02_n29
     aaa_02_30 = lv_02_m30 ^ lv_02_m31
     # Round 3 ##################################################################
-    lv_03_h25 = !lv_02_m31 & !lv_01_m26
+    lv_03_h25 = !lv_02_m31 & !aaa_01_26
     lv_03_h24 = aaa_02_30 | lv_03_h25
     lv_03_h23 = aaa_02_29 | lv_03_h24
     lv_03_h22 = lv_03_h23 & aaa_02_28
@@ -333,7 +339,7 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_03_h02 = aaa_02_08 | lv_03_h03
     lv_03_h01 = (aaa_02_07 & !aaa_01_02) | (lv_03_h02 & (aaa_02_07 | !aaa_01_02))
     lv_03_h00 = aaa_02_06 | lv_03_h01
-    lv_03_i26 = !lv_02_m31 ^ !lv_01_m26
+    lv_03_i26 = !lv_02_m31 ^ !aaa_01_26
     lv_03_i25 = aaa_02_30 ^ !lv_03_h25
     lv_03_i24 = aaa_02_29 ^ !lv_03_h24
     lv_03_i23 = aaa_02_28 ^ lv_03_h23
@@ -568,9 +574,9 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_04_g23 = aaa_02_23 & aaa_01_21
     lv_04_g24 = (aaa_02_24 & aaa_01_22) | !aaa_02_24
     lv_04_g25 = (aaa_02_25 & aaa_01_23) | !aaa_02_25
-    lv_04_g26 = aaa_02_26 & !lv_01_m24
-    lv_04_g27 = aaa_02_27 & lv_01_m25
-    lv_04_g28 = aaa_02_28 & lv_01_m26
+    lv_04_g26 = aaa_02_26 & aaa_01_24
+    lv_04_g27 = aaa_02_27 & aaa_01_25
+    lv_04_g28 = aaa_02_28 & aaa_01_26
     lv_04_g30 = aaa_02_30 & iv_029
     lv_04_g31 = !lv_02_m31 & iv_030
     lv_04_h30 = aaa_03_04 & lv_04_g31
@@ -846,9 +852,9 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_05_g23 = (aaa_03_23 & aaa_02_21) | (!aaa_03_23 & aaa_01_21)
     lv_05_g24 = (aaa_03_24 & aaa_02_22) | (!aaa_03_24 & aaa_01_22)
     lv_05_g25 = (aaa_03_25 & aaa_02_23) | (!aaa_03_25 & aaa_01_23)
-    lv_05_g26 = (aaa_03_26 & aaa_02_24) | (!aaa_03_26 & !lv_01_m24)
-    lv_05_g27 = (aaa_03_27 & aaa_02_25) | (!aaa_03_27 & lv_01_m25)
-    lv_05_g28 = (aaa_03_28 & aaa_02_26) | (!aaa_03_28 & lv_01_m26)
+    lv_05_g26 = (aaa_03_26 & aaa_02_24) | (!aaa_03_26 & aaa_01_24)
+    lv_05_g27 = (aaa_03_27 & aaa_02_25) | (!aaa_03_27 & aaa_01_25)
+    lv_05_g28 = (aaa_03_28 & aaa_02_26) | (!aaa_03_28 & aaa_01_26)
     lv_05_g29 = (aaa_03_29 & aaa_02_27) | !aaa_03_29
     lv_05_g30 = (aaa_03_30 & aaa_02_28) | (!aaa_03_30 & iv_029)
     lv_05_g31 = (!lv_03_m31 & aaa_02_29) | (lv_03_m31 & iv_030)
@@ -1187,9 +1193,9 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_06_j30 = lv_06_i31 & iv_030
     lv_06_j29 = (lv_06_i30 & iv_029) | (lv_06_j30 & (lv_06_i30 | iv_029))
     lv_06_j28 = lv_06_i29 | lv_06_j29
-    lv_06_j27 = (lv_06_i28 & lv_01_m26) | (lv_06_j28 & (lv_06_i28 | lv_01_m26))
-    lv_06_j26 = (lv_06_i27 & lv_01_m25) | (lv_06_j27 & (lv_06_i27 | lv_01_m25))
-    lv_06_j25 = (lv_06_i26 & !lv_01_m24) | (lv_06_j26 & (lv_06_i26 | !lv_01_m24))
+    lv_06_j27 = (lv_06_i28 & aaa_01_26) | (lv_06_j28 & (lv_06_i28 | aaa_01_26))
+    lv_06_j26 = (lv_06_i27 & aaa_01_25) | (lv_06_j27 & (lv_06_i27 | aaa_01_25))
+    lv_06_j25 = (lv_06_i26 & aaa_01_24) | (lv_06_j26 & (lv_06_i26 | aaa_01_24))
     lv_06_j24 = (lv_06_i25 & aaa_01_23) | (lv_06_j25 & (lv_06_i25 | aaa_01_23))
     lv_06_j23 = (lv_06_i24 & aaa_01_22) | (lv_06_j24 & (lv_06_i24 | aaa_01_22))
     lv_06_j22 = (lv_06_i23 & aaa_01_21) | (lv_06_j23 & (lv_06_i23 | aaa_01_21))
@@ -1218,9 +1224,9 @@ class SHA1BitwiseCompress0_T024_F028_F031_F032 < SHA1WithoutCompress0
     lv_06_k31 = lv_06_i31 ^ iv_030
     lv_06_k30 = lv_06_i30 ^ iv_029 ^ lv_06_j30
     lv_06_k29 = lv_06_i29 ^ !lv_06_j29
-    lv_06_k28 = lv_06_i28 ^ lv_01_m26 ^ lv_06_j28
-    lv_06_k27 = lv_06_i27 ^ lv_01_m25 ^ lv_06_j27
-    lv_06_k26 = lv_06_i26 ^ !lv_01_m24 ^ lv_06_j26
+    lv_06_k28 = lv_06_i28 ^ aaa_01_26 ^ lv_06_j28
+    lv_06_k27 = lv_06_i27 ^ aaa_01_25 ^ lv_06_j27
+    lv_06_k26 = lv_06_i26 ^ aaa_01_24 ^ lv_06_j26
     lv_06_k25 = lv_06_i25 ^ aaa_01_23 ^ lv_06_j25
     lv_06_k24 = lv_06_i24 ^ aaa_01_22 ^ lv_06_j24
     lv_06_k23 = lv_06_i23 ^ aaa_01_21 ^ lv_06_j23
