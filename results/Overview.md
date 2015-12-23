@@ -5,6 +5,17 @@ sections below give an overview of the project using the total complexity of
 the function, the number of operations in the function and the number of
 assignments.
 
+## Number of Direct Occurrences
+
+Results better than the linear reduction are marked in bold.
+
+| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
+|:------------:|:----------------:|:--------------:| ---------------- |
+|       0      | 2,284,316        | 2,284,316      | [Initial Situation](000/000.md) |
+|       1      | 2,279,846        | **2,278,210**  | [O031032](001/o031032.md) |
+
+![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
+
 ## Complexity of the Least Complex Input Bit
 
 The complexity of an input bit is calculated as the number of times it appears
@@ -27,9 +38,6 @@ Results better than the exponential reduction are marked in bold.
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 1.00×10⁰              | 1.00×10⁰       | [Initial Situation](000/000.md) |
 |       1      | 1.61×10⁻¹             | 1.00×10⁰       | Many |
-|       2      | 2.59×10⁻²             | 1.00×10⁰       | Many |
-|       3      | 4.17×10⁻³             | 1.00×10⁰       | Many |
-|       4      | 6.71×10⁻⁴             | 1.00×10⁰       | Many |
 
 ![Least Complex Input Bit](Least_Complex_Input_Bit.png "Least Complex Input Bit")
 
@@ -59,9 +67,7 @@ Results better than the exponential reduction are marked in bold.
 | Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 1.00×10⁰              | 1.00×10⁰       | [Initial Situation](000/000.md) |
-|       1      | 1.61×10⁻¹             | 3.64×10⁻¹      | [F032](001/f032.md) |
-|       2      | 2.59×10⁻²             | **1.87×10⁻²**  | [F031-F032](002/f031_f032.md) |
-|       3      | 4.17×10⁻³             | 9.19×10⁻³      | [T024-F031-F032](003/t024_f031_f032.md) |
+|       1      | 1.61×10⁻¹             | **6.04×10⁻²**  | [E031032](001/e031032.md) |
 
 ![Total Complexity](Total_Complexity.png "Total Complexity")
 
@@ -90,11 +96,8 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 61,474           | 61,474         | [Initial Situation](000/000.md) |
-|       1      | 61,354           | 61,448         | [F032](001/f032.md) |
-|       2      | 61,233           | 61,424         | [F031-F032](002/f031_f032.md) |
-|       3      | 61,113           | 61,385         | [T029-F031-F032](003/t029_f031_f032.md) |
-|       4      | 60,993           | 61,363         | [T029-F030-F031-F032](004/t029_f030_f031_f032.md) |
+|       0      | 25,954,167       | 25,954,167     | [Initial Situation](000/000.md) |
+|       1      | 25,903,376       | **25,901,811** | [E031032](001/e031032.md) |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
 
@@ -122,10 +125,7 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 24,523           | 24,523         | [Initial Situation](000/000.md) |
-|       1      | 24,475           | 24,508         | [F032](001/f032.md) |
-|       2      | 24,427           | 24,491         | [F031-F032](002/f031_f032.md) |
-|       3      | 24,379           | 24,458         | [T029-F031-F032](003/t029_f031_f032.md) |
-|       4      | 24,331           | 24,450         | [F027-T029-F031-F032](004/f027_t029_f031_f032.md), [T027-T029-F031-F032](004/t027_t029_f031_f032.md) |
+|       0      | 24,180           | 24,180         | [Initial Situation](000/000.md) |
+|       1      | 24,133           | 24,166         | [E031032](001/e031032.md) |
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
