@@ -5,7 +5,7 @@ class SHA1BitwiseCompress0_O031032_O069128 < SHA1WithoutCompress0
     verify_restriction(iv_031, !iv_032)
     verify_restriction(iv_069, !iv_128)
     iv_032 = !iv_031
-    iv_069 = !iv_128
+    iv_128 = !iv_069
     # Round 1 ##################################################################
     lv_01_l28 = iv_031 & iv_030
     lv_01_l27 = iv_029 | lv_01_l28
