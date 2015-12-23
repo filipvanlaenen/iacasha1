@@ -7,6 +7,25 @@ assignments.
 
 ## Number of Direct Occurrences
 
+The number of direct occurrences is measured as the number of times an input bit
+occurs directly in an expression in the calculation. When all input bits have
+been fixed, the number of direct occurrences will have been reduced to zero.
+
+A reduction of the number of direct occurrences may give an indication that the
+project is approaching a collision, and if the number of direct occurrences is
+reduced to zero without all input bits being fixed, a collision has indeed been
+found. However, it can be expected that if this project will find a collision,
+the collision will be found long before the number of direct occurrences has
+been reduced to zero. Also, a large reduction in the number of direct
+occurrences doesn't guarantee that a collision will be found: as long as every
+input bit remains present at least once in the calculation of an output bit, a
+collision has not been found.
+
+The performance of the project can be benchmarked against a linear reduction of
+the number of direct occurrences, starting from the number of direct occurrences
+for the situation where no input bit has been fixed, to a value of 0 for 511
+input bits fixed.
+
 Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
@@ -36,8 +55,8 @@ Results better than the exponential reduction are marked in bold.
 
 | Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
 |:------------:|:---------------------:|:--------------:| ---------------- |
-|       0      | 1.00×10⁰              | 1.00×10⁰       | [Initial Situation](000/000.md) |
-|       1      | 1.61×10⁻¹             | 1.00×10⁰       | Many |
+|       0      | 2.62×10³²⁷            | 2.62×10³²⁷     | [Initial Situation](000/000.md) |
+|       1      | 5.99×10³²⁶            | 2.62×10³²⁷     | Many |
 
 ![Least Complex Input Bit](Least_Complex_Input_Bit.png "Least Complex Input Bit")
 
@@ -66,8 +85,8 @@ Results better than the exponential reduction are marked in bold.
 
 | Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
 |:------------:|:---------------------:|:--------------:| ---------------- |
-|       0      | 1.00×10⁰              | 1.00×10⁰       | [Initial Situation](000/000.md) |
-|       1      | 1.61×10⁻¹             | **6.04×10⁻²**  | [E031032](001/e031032.md) |
+|       0      | 2.61×10⁴⁰⁵            | 2.61×10⁴⁰⁵     | [Initial Situation](000/000.md) |
+|       1      | 4.20×10⁴⁰⁴            | **1.57×10⁴⁰⁴** | [E031032](001/e031032.md) |
 
 ![Total Complexity](Total_Complexity.png "Total Complexity")
 
@@ -104,7 +123,7 @@ Results better than the linear reduction are marked in bold.
 ## Number of Assignments
 
 The number of assignments is measured as the number of local variables used in
-the calculation. When all input bits have been fixed, the number of assginments
+the calculation. When all input bits have been fixed, the number of assignments
 will have been reduced to zero.
 
 A reduction of the number of assignments may give an indication that the project
