@@ -5,6 +5,29 @@ sections below give an overview of the project using the total complexity of
 the function, the number of operations in the function and the number of
 assignments.
 
+## Lowest Number of Direct Occurrences
+
+The number of direct occurrences is measured as the number of times an input bit
+occurs directly in an expression in the calculation. If an input bit has been
+eliminated from the calculation of the output bits, a collission has been found
+as the result of the function will be the same regardless of the value of the
+eliminiated input bit. In that case, its number of direct occurrences will have
+been reduced to zero.
+
+The performance of the project can be benchmarked against a linear reduction of
+the lowest number of direct occurrences, starting from the lowest number of
+direct occurrences for the situation where no input bit has been fixed, to a
+value of 0 for 511 input bits fixed.
+
+Results better than the linear reduction are marked in bold.
+
+| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
+|:------------:|:----------------:|:--------------:| ---------------- |
+|       0      | 4,060            | 4,060          | [Initial Situation](000/000.md) |
+|       1      | 4,052            | 4,060          | Many             |
+
+![Lowest Number of Direct Occurrences](Lowest_Number_of_Direct_Occurrences.png "Lowest Number of Direct Occurrences")
+
 ## Number of Direct Occurrences
 
 The number of direct occurrences is measured as the number of times an input bit
@@ -56,7 +79,7 @@ Results better than the exponential reduction are marked in bold.
 | Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 2.62×10³²⁷            | 2.62×10³²⁷     | [Initial Situation](000/000.md) |
-|       1      | 5.99×10³²⁶            | 2.62×10³²⁷     | Many |
+|       1      | 5.99×10³²⁶            | 2.62×10³²⁷     | Many             |
 
 ![Least Complex Input Bit](Least_Complex_Input_Bit.png "Least Complex Input Bit")
 
