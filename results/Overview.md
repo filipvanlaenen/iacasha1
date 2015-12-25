@@ -25,6 +25,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 4,060            | 4,060          | [Initial Situation](000/000.md) |
 |       1      | 4,052            | 4,060          | Many             |
+|       2      | 4,044            | 4,060          | Many             |
 
 ![Lowest Number of Direct Occurrences](Lowest_Number_of_Direct_Occurrences.png "Lowest Number of Direct Occurrences")
 
@@ -55,6 +56,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 2,284,316        | 2,284,316      | [Initial Situation](000/000.md) |
 |       1      | 2,279,846        | **2,278,210**  | [O031032](001/o031032.md) |
+|       2      | 2,275,375        | **2,272,890**  | [O031032-e069128](002/o031032_e069128.md), [O031032-O069128](001/o031032_o069128.md) |
 
 ![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
 
@@ -80,6 +82,7 @@ Results better than the exponential reduction are marked in bold.
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 2.62×10³²⁷            | 2.62×10³²⁷     | [Initial Situation](000/000.md) |
 |       1      | 5.99×10³²⁶            | 2.62×10³²⁷     | Many             |
+|       2      | 1.37×10³²⁶            | 2.62×10³²⁷     | Many             |
 
 ![Least Complex Input Bit](Least_Complex_Input_Bit.png "Least Complex Input Bit")
 
@@ -110,6 +113,7 @@ Results better than the exponential reduction are marked in bold.
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 2.61×10⁴⁰⁵            | 2.61×10⁴⁰⁵     | [Initial Situation](000/000.md) |
 |       1      | 4.20×10⁴⁰⁴            | **1.57×10⁴⁰⁴** | [E031032](001/e031032.md) |
+|       2      | 6.76×10⁴⁰³            | **2.52×10⁴⁰⁵** | [F015-O031032](002/f015_o031032.md) |
 
 ![Total Complexity](Total_Complexity.png "Total Complexity")
 
@@ -140,6 +144,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 25,954,167       | 25,954,167     | [Initial Situation](000/000.md) |
 |       1      | 25,903,376       | **25,901,811** | [E031032](001/e031032.md) |
+|       2      | 25,852,585       | 25,922,487     | [F015-O031032](002/f015_o031032.md) |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
 
@@ -169,5 +174,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 24,180           | 24,180         | [Initial Situation](000/000.md) |
 |       1      | 24,133           | 24,166         | [E031032](001/e031032.md) |
+|       2      | 24,085           | 24,172         | [F015-O031032](002/f015_o031032.md) |
+
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
