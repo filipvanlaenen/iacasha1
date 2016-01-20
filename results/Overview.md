@@ -55,7 +55,7 @@ Results better than the linear reduction are marked in bold.
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 2,284,316        | 2,284,316      | [Initial Situation](000/000.md) |
-|       1      | 2,279,846        | **2,278,210**  | [O031032](001/o031032.md) |
+|       1      | 2,279,846        | **2,277,498**  | [T256](001/t256.md) |
 |       2      | 2,275,375        | **2,272,890**  | [O031032-E069128](002/o031032_e069128.md), [O031032-O069128](001/o031032_o069128.md) |
 
 ![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
