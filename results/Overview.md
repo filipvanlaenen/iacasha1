@@ -5,6 +5,28 @@ sections below give an overview of the project using the total complexity of
 the function, the number of operations in the function and the number of
 assignments.
 
+## Lowest Number of Direct Output Occurrences
+
+The number of direct output occurrences is measured as the number of times an input bit
+occurs directly in the last expressions of the calculation of the output bits. Elimination
+of an input bit from the last expressions of the calculation of the output bits is the
+first step towards a total elimination of the input bit from the calculation.
+
+The performance of the project can be benchmarked against a linear reduction of
+the lowest number of direct output occurrences, starting from the lowest number of
+direct output occurrences for the situation where no input bit has been fixed, to a
+value of 0 for 511 input bits fixed.
+
+Results better than the linear reduction are marked in bold.
+
+| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
+|:------------:|:----------------:|:--------------:| ---------------- |
+|       0      | 60               | 60             | [Initial Situation](000/000.md) |
+|       1      | 60               | **54**         | [E153497](001/e153497.md), [O153497](001/o153497.md) |
+|       2      | 60               | **54**         | Many |
+
+![Lowest Number of Direct Output Occurrences](Lowest_Number_of_Direct_Output_Occurrences.png "Lowest Number of Direct Output Occurrences")
+
 ## Lowest Number of Direct Occurrences
 
 The number of direct occurrences is measured as the number of times an input bit
@@ -25,7 +47,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 4,060            | 4,060          | [Initial Situation](000/000.md) |
 |       1      | 4,052            | 4,060          | Many             |
-|       2      | 4,044            | 4,060          | Many             |
+|       2      | 4,044            | 4,059          | [F511-F512](002/f511_f512.md) |
 
 ![Lowest Number of Direct Occurrences](Lowest_Number_of_Direct_Occurrences.png "Lowest Number of Direct Occurrences")
 
@@ -56,7 +78,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 2,284,316        | 2,284,316      | [Initial Situation](000/000.md) |
 |       1      | 2,279,846        | **2,277,498**  | [T256](001/t256.md) |
-|       2      | 2,275,375        | **2,272,890**  | [O031032-E069128](002/o031032_e069128.md), [O031032-O069128](001/o031032_o069128.md) |
+|       2      | 2,275,375        | **2,272,178**  | [E069128-T256](002/e069128_t256.md), [O069128-T256](002/o069128_t256.md) |
 
 ![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
 
@@ -112,8 +134,8 @@ Results better than the exponential reduction are marked in bold.
 | Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 2.61×10⁴⁰⁵            | 2.61×10⁴⁰⁵     | [Initial Situation](000/000.md) |
-|       1      | 4.20×10⁴⁰⁴            | **1.57×10⁴⁰⁴** | [E031032](001/e031032.md) |
-|       2      | 6.76×10⁴⁰³            | 1.44×10⁴⁰⁵     | [T015-O031032](002/t015_o031032.md) |
+|       1      | 4.20×10⁴⁰⁴            | **1.58×10⁴⁰⁴** | [E031032](001/e031032.md) |
+|       2      | 6.76×10⁴⁰³            | 1.56×10⁴⁰⁴     | [T002-E031032.md](002/t002_e031032.md) |
 
 ![Total Complexity](Total_Complexity.png "Total Complexity")
 
@@ -144,7 +166,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 25,954,167       | 25,954,167     | [Initial Situation](000/000.md) |
 |       1      | 25,903,376       | **25,901,811** | [E031032](001/e031032.md) |
-|       2      | 25,852,585       | 25,918,163     | [T015-O031032](002/t015_o031032.md) |
+|       2      | 25,852,585       | 25,892,767     | [T002-E031032](002/t002_e031032.md) |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
 
@@ -174,7 +196,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 24,180           | 24,180         | [Initial Situation](000/000.md) |
 |       1      | 24,133           | 24,166         | [E031032](001/e031032.md) |
-|       2      | 24,085           | 24,170         | [T015-O031032](002/t015_o031032.md) |
+|       2      | 24,085           | 24,164         | [T002-E031032](002/t002_e031032.md), [F002-E031032](002/f002_e031032.md) |
 
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
