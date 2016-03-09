@@ -8,7 +8,7 @@ require 'timeout'
 
 RSpec.configure do |config|
   config.around do |example|
-    Timeout.timeout(10) do
+    Timeout.timeout(1) do
       example.run
     end
   end
