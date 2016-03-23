@@ -22,8 +22,8 @@ Results better than the linear reduction are marked in bold.
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 60               | 60             | [Initial Situation](000/000.md) |
-|       1      | 60               | **54**         | [E153497](001/e153497.md), [O153497](001/o153497.md) |
-|       2      | 60               | **54**         | Many |
+|       1      | 60               | (**54**)         | ([E153497](001/e153497.md), [O153497](001/o153497.md)) |
+|       2      | 60               | (**54**)         | Many |
 
 ![Lowest Number of Direct Output Occurrences](Lowest_Number_of_Direct_Output_Occurrences.png "Lowest Number of Direct Output Occurrences")
 
@@ -47,7 +47,7 @@ Results better than the linear reduction are marked in bold.
 |:------------:|:----------------:|:--------------:| ---------------- |
 |       0      | 4,060            | 4,060          | [Initial Situation](000/000.md) |
 |       1      | 4,052            | 4,060          | Many             |
-|       2      | 4,044            | 4,059          | [F511-F512](002/f511_f512.md) |
+|       2      | 4,044            | (4,059)          | ([F511-F512](002/f511_f512.md)) |
 
 ![Lowest Number of Direct Occurrences](Lowest_Number_of_Direct_Occurrences.png "Lowest Number of Direct Occurrences")
 
@@ -76,9 +76,9 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 2,284,316        | 2,284,316      | [Initial Situation](000/000.md) |
-|       1      | 2,279,846        | **2,277,498**  | [T256](001/t256.md) |
-|       2      | 2,275,375        | **2,272,178**  | [E069128-T256](002/e069128_t256.md), [O069128-T256](002/o069128_t256.md) |
+|       0      | 2,284,331        | 2,284,331      | [Initial Situation](000/000.md) |
+|       1      | 2,279,861        | (**2,277,498**)  | ([T256](001/t256.md)) |
+|       2      | 2,275,390        | (**2,272,178**)  | ([E069128-T256](002/e069128_t256.md), [O069128-T256](002/o069128_t256.md)) |
 
 ![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
 
@@ -134,8 +134,8 @@ Results better than the exponential reduction are marked in bold.
 | Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
 |:------------:|:---------------------:|:--------------:| ---------------- |
 |       0      | 2.61×10⁴⁰⁵            | 2.61×10⁴⁰⁵     | [Initial Situation](000/000.md) |
-|       1      | 4.20×10⁴⁰⁴            | **1.58×10⁴⁰⁴** | [E031032](001/e031032.md) |
-|       2      | 6.76×10⁴⁰³            | 1.56×10⁴⁰⁴     | [T002-E031032.md](002/t002_e031032.md) |
+|       1      | 4.20×10⁴⁰⁴            | (**1.58×10⁴⁰⁴**) | ([E031032](001/e031032.md)) |
+|       2      | 6.76×10⁴⁰³            | (1.56×10⁴⁰⁴)     | ([T002-E031032.md](002/t002_e031032.md)) |
 
 ![Total Complexity](Total_Complexity.png "Total Complexity")
 
@@ -164,9 +164,9 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 25,954,167       | 25,954,167     | [Initial Situation](000/000.md) |
-|       1      | 25,903,376       | **25,901,811** | [E031032](001/e031032.md) |
-|       2      | 25,852,585       | 25,892,767     | [T002-E031032](002/t002_e031032.md) |
+|       0      | 25,956,122       | 25,956,122     | [Initial Situation](000/000.md) |
+|       1      | 25,905,327       | (**25,901,811**) | ([E031032](001/e031032.md)) |
+|       2      | 25,854,532       | (25,892,767)     | ([T002-E031032](002/t002_e031032.md)) |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
 
@@ -194,9 +194,9 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 24,180           | 24,180         | [Initial Situation](000/000.md) |
-|       1      | 24,133           | 24,166         | [E031032](001/e031032.md) |
-|       2      | 24,085           | 24,164         | [T002-E031032](002/t002_e031032.md), [F002-E031032](002/f002_e031032.md) |
+|       0      | 47,947           | 47,947         | [Initial Situation](000/000.md) |
+|       1      | 47,853           | (24,166)         | ([E031032](001/e031032.md)) |
+|       2      | 47,759           | (24,164)         | ([T002-E031032](002/t002_e031032.md), [F002-E031032](002/f002_e031032.md)) |
 
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
