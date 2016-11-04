@@ -19,11 +19,17 @@ value of 0 for 511 input bits fixed.
 
 Results better than the linear reduction are marked in bold.
 
-| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
-|:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 60               | 60             | [Initial Situation](000/000.md) |
-|       1      | 60               | (**54**)         | ([E153497](001/e153497.md), [O153497](001/o153497.md)) |
-|       2      | 60               | (**54**)         | Many |
+| Restrictions | Linear Reduction | Best Reduction | Worst Reduction |
+|:------------:|:----------------:|:--------------:|:---------------:|
+|       0      | 60	              | 60             | 60              |
+|       1      | 60	              | 60             | 60              |
+|      65      | 52	              | 60             | 60              |
+|     507      |  0               | 70             | 70              |
+|     508      |  0               | 71             | 75              |
+|     509      |  0               | 66             | 81              |
+|     510      |  0               | 58             | 91              |
+|     511      |  0	              | ---            | ---             |
+
 
 ![Lowest Number of Direct Output Occurrences](Lowest_Number_of_Direct_Output_Occurrences.png "Lowest Number of Direct Output Occurrences")
 
