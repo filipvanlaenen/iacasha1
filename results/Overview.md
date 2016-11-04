@@ -28,7 +28,7 @@ Results better than the linear reduction are marked in bold.
 |     508      |  0               | 71             | 75              |
 |     509      |  0               | 66             | 81              |
 |     510      |  0               | 58             | 91              |
-|     511      |  0	              | ([63](511/91eaaf8008a6bd389e724be1212f62e51a13e84d.md)) | 95              |
+|     511      |  0	              | [63](511/91eaaf8008a6bd389e724be1212f62e51a13e84d.md) | 95              |
 
 ![Lowest Number of Direct Output Occurrences](Lowest_Number_of_Direct_Output_Occurrences.png "Lowest Number of Direct Output Occurrences")
 
