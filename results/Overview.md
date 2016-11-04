@@ -30,8 +30,9 @@ Results better than the linear reduction are marked in bold.
 |     510      |  0               | 58             | 91              |
 |     511      |  0	              | ---            | ---             |
 
-
 ![Lowest Number of Direct Output Occurrences](Lowest_Number_of_Direct_Output_Occurrences.png "Lowest Number of Direct Output Occurrences")
+
+![Lowest Number of Direct Output Occurrences for 500 Restrictions and More](Lowest_Number_of_Direct_Output_Occurrences_500_or_Higher.png "Lowest Number of Direct Output Occurrences for 500 Restrictions and More")
 
 ## Lowest Number of Direct Occurrences
 
