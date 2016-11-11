@@ -59,8 +59,11 @@ Results better than the linear reduction are marked in bold.
 |     508      |    24            | 4,075          | 4,556           |
 |     509      |    16            | 4,059          | 5,046           |
 |     510      |     8            | 3,892          | 5,189           |
+|     511      |  0	              | [63](511/91eaaf8008a6bd389e724be1212f62e51a13e84d.md) | 95              |
 
 ![Lowest Number of Direct Occurrences](Lowest_Number_of_Direct_Occurrences.png "Lowest Number of Direct Occurrences")
+
+![Lowest Number of Direct Occurrences for 500 Restrictions and More](Lowest_Number_of_Direct_Occurrences_500_or_Higher.png "Lowest Number of Direct Occurrences for 500 Restrictions and More")
 
 ## Number of Direct Occurrences
 
