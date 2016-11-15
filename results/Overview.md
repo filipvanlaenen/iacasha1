@@ -206,11 +206,19 @@ fixed.
 
 Results better than the linear reduction are marked in bold.
 
-| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
-|:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 47,947           | 47,947         | [Initial Situation](000/000.md) |
-|       1      | 47,853           | (24,166)         | ([E031032](001/e031032.md)) |
-|       2      | 47,759           | (24,164)         | ([T002-E031032](002/t002_e031032.md), [F002-E031032](002/f002_e031032.md)) |
+| Restrictions | Linear Reduction | Best Reduction | Worst Reduction |
+|:------------:|:----------------:|:--------------:|:---------------:|
+|       0      | 47,947           | 47,947         | 47,947          |
+|       1      | 47,853           | 47,947         | 47,947          |
+|      65      | 41,848           | **24,116**     | **24,116**      |
+|     504      |    657           | 30,670         | 30,670          |
+|     507      |    375           | 30,061         | 30,061          |
+|     508      |    281           | 29,828         | 37,806          |
+|     509      |    188           | 29,411         | 38,035          |
+|     510      |     94           | 27,700         | 37,558          |
+|     511      |      0           |      0         |      0          |
 
 
 ![Number of Assignments](Number_of_Assignments.png "Number of Assignments")
+
+![Number of Assignments for 500 Restrictions and More](Number_of_Assignments_500_or_Higher.png "Number of Assignments for 500 Restrictions and More")
