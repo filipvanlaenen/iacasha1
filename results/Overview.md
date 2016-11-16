@@ -178,11 +178,20 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 25,956,122       | 25,956,122     | [Initial Situation](000/000.md) |
-|       1      | 25,905,327       | (**25,901,811**) | ([E031032](001/e031032.md)) |
-|       2      | 25,854,532       | (25,892,767)     | ([T002-E031032](002/t002_e031032.md)) |
+| 0 | 25956122 | 25956122 | 25956122 |
+| 1 | 25905327 | 25950718 | 25950718 |
+| 65 | 22654463 | 25500762 | 25500762 |
+| 504 | 355563 | 10916919 | 10916919 |
+| 505 | 304769 | 10912992 | 10913147 |
+| 507 | 203179 | 10857293 | 10857293 |
+| 508 | 152384 | 10841896 | 20558782 |
+| 509 | 101590 | 10603142 | 21116857 |
+| 510 | 50795 | 9126531 | 20564230 |
+| 511 | 0 | 0 | 0 |
 
 ![Number of Operations](Number_of_Operations.png "Number of Operations")
+
+![Number of Operations for 500 Restrictions and More](Number_of_Operations_500_or_Higher.png "Number of Operations for 500 Restrictions and More")
 
 ## Number of Assignments
 
