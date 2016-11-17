@@ -21,13 +21,16 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Worst Reduction |
 |:------------:|:----------------:|:--------------:|:---------------:|
-|       0      | 60	              | 60             | 60              |
-|       1      | 60	              | 60             | 60              |
-|      65      | 52	              | 60             | 60              |
-|     507      |  0               | 70             | 70              |
-|     508      |  0               | 71             | 75              |
-|     509      |  0               | 66             | 81              |
-|     510      |  0               | 58             | 91              |
+| 0 | 60 | 60 | 60 |
+| 1 | 60 | 60 | 60 |
+| 65 | 52 | 60 | 60 |
+| 504 | 1 | 70 | 70 |
+| 505 | 1 | 70 | 72 |
+| 506 | 1 | 65 | 74 |
+| 507 | 0 | 70 | 71 |
+| 508 | 0 | 71 | 75 |
+| 509 | 0 | 66 | 81 |
+| 510 | 0 | 58 | 91 |
 |     511      |  0	              | [63](511/91eaaf8008a6bd389e724be1212f62e51a13e84d.md) | 95              |
 
 ![Lowest Number of Direct Output Occurrences](Lowest_Number_of_Direct_Output_Occurrences.png "Lowest Number of Direct Output Occurrences")
@@ -90,11 +93,21 @@ Results better than the linear reduction are marked in bold.
 
 | Restrictions | Linear Reduction | Best Reduction | Best Restriction |
 |:------------:|:----------------:|:--------------:| ---------------- |
-|       0      | 2,284,331        | 2,284,331      | [Initial Situation](000/000.md) |
-|       1      | 2,279,861        | (**2,277,498**)  | ([T256](001/t256.md)) |
-|       2      | 2,275,390        | (**2,272,178**)  | ([E069128-T256](002/e069128_t256.md), [O069128-T256](002/o069128_t256.md)) |
+| 0 | 2284331 | 2284331 | 2284331 |
+| 1 | 2279861 | 2278927 | 2278927 |
+| 65 | 1993761 | 1996797 | 1996797 |
+| 504 | 31292 | 32682 | 32682 |
+| 505 | 26822 | 28763 | 28920 |
+| 506 | 22352 | 25049 | 25324 |
+| 507 | 17881 | 20642 | 21197 |
+| 508 | 13411 | 16624 | 19392 |
+| 509 | 8941 | 12517 | 15520 |
+| 510 | 4470 | 7978 | 10583 |
+| 511 | 0 | 0 | 0 |
 
 ![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
+
+![Number of Direct Occurrences for 500 Restrictions and More](Number_of_Direct_Occurrences_or_Higher.png "Number of Direct Occurrences for 500 Restrictions and More")
 
 ## Complexity of the Least Complex Input Bit
 
