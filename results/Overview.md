@@ -91,8 +91,8 @@ input bits fixed.
 
 Results better than the linear reduction are marked in bold.
 
-| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
-|:------------:|:----------------:|:--------------:| ---------------- |
+| Restrictions | Linear Reduction | Best Reduction | Worst Reduction |
+|:------------:|:----------------:|:--------------:|:---------------:|
 | 0 | 2284331 | 2284331 | 2284331 |
 | 1 | 2279861 | 2278927 | 2278927 |
 | 65 | 1993761 | 1996797 | 1996797 |
@@ -107,7 +107,7 @@ Results better than the linear reduction are marked in bold.
 
 ![Number of Direct Occurrences](Number_of_Direct_Occurrences.png "Number of Direct Occurrences")
 
-![Number of Direct Occurrences for 500 Restrictions and More](Number_of_Direct_Occurrences_or_Higher.png "Number of Direct Occurrences for 500 Restrictions and More")
+![Number of Direct Occurrences for 500 Restrictions and More](Number_of_Direct_Occurrences_500_or_Higher.png "Number of Direct Occurrences for 500 Restrictions and More")
 
 ## Complexity of the Least Complex Input Bit
 
@@ -127,13 +127,23 @@ below the complexity of the least complex input bit from the previous round.
 
 Results better than the exponential reduction are marked in bold.
 
-| Restrictions | Exponential Reduction | Best Reduction | Best Restriction |
-|:------------:|:---------------------:|:--------------:| ---------------- |
-|       0      | 2.62×10³²⁷            | 2.62×10³²⁷     | [Initial Situation](000/000.md) |
-|       1      | 5.99×10³²⁶            | 2.62×10³²⁷     | Many             |
-|       2      | 1.37×10³²⁶            | 2.62×10³²⁷     | Many             |
+| Restrictions | Linear Reduction | Best Reduction | Worst Reduction |
+|:------------:|:----------------:|:--------------:|:---------------:|
+| 0 | 2.618×10^327 | 2.618×10^327 | 2.618×10^327 |
+| 1 | 5.986×10^326 | 2.618×10^327 | 2.618×10^327 |
+| 65 | 5.886×10^285 | 1.299×10^336 | 1.299×10^336 |
+| 504 | 2.587×10^4 | 4.489×10^295 | 4.489×10^295 |
+| 505 |  | 3.244×10^295 | 8.771×10^295 |
+| 506 |  | 3.888×10^295 | 1.836×10^296 |
+| 507 |  | 1.759×10^294 | 1.169×10^296 |
+| 508 |  | 2.357×10^293 | 9.300×10^362 |
+| 509 |  | 2.939×10^288 | 2.423×10^368 |
+| 510 |  | 3.900×10^272 | 3.300×10^364 |
+| 511 |  | 6.700×10^1 | 9.500×10^1 |
 
 ![Least Complex Input Bit](Least_Complex_Input_Bit.png "Least Complex Input Bit")
+
+![Least Complex Input Bit for 500 Restrictions and More](Least_Complex_Input_Bit_500_or_Higher.png "Least Complex Input Bit for 500 Restrictions and More")
 
 ## Total Complexity
 
@@ -189,8 +199,8 @@ fixed.
 
 Results better than the linear reduction are marked in bold.
 
-| Restrictions | Linear Reduction | Best Reduction | Best Restriction |
-|:------------:|:----------------:|:--------------:| ---------------- |
+| Restrictions | Linear Reduction | Best Reduction | Worst Reduction |
+|:------------:|:----------------:|:--------------:|:---------------:|
 | 0 | 25956122 | 25956122 | 25956122 |
 | 1 | 25905327 | 25950718 | 25950718 |
 | 65 | 22654463 | 25500762 | 25500762 |
